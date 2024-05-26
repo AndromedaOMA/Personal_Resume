@@ -17,7 +17,7 @@ import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 
-import { Logo } from "@/components/icons";
+import { Logo, LogoDesc } from "@/components/icons";
 
 export const Navbar = () => {
 	const smoothScrollTo = (target: HTMLElement) => {
@@ -44,11 +44,11 @@ export const Navbar = () => {
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						{/* <LogoDesc /> */}
+						<LogoDesc />
 						{/* <p className="font-bold text-inherit">Soul Steps</p> */}
 					</NextLink>
 				</NavbarBrand>
-				
+
 				<div className="hidden mt-5 sm:flex gap-4 justify-start ml-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
@@ -83,7 +83,7 @@ export const Navbar = () => {
 				</NavbarItem>
 			</NavbarContent>
 
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+			<NavbarContent className="sm:hidden basis-1 pl-4 mt-3" justify="end">
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>
@@ -93,7 +93,7 @@ export const Navbar = () => {
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
-							
+
 								// color={
 								// 	index === 2
 								// 		? "primary"
@@ -102,8 +102,9 @@ export const Navbar = () => {
 								// 			: "foreground"
 								// }
 								color="foreground"
-								href="#"
 								size="lg"
+								onClick={item.label === "About" ? handleAboutClick : handleTeamClick}
+
 							>
 								{item.label}
 							</Link>

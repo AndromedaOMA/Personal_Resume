@@ -24,7 +24,6 @@ export default function IndexPage() {
 			<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
 				<div className="inline-block max-w-xlg text-center justify-center">
 					<h1 className={title()}>Bringing Affordable, Personalised Mental Health Support <br /> To Your Fingertips!</h1>
-					<h1 className={title()}></h1>
 					<h4 className={subtitle({ class: "mt-3" })}>
 						Peace of Mind, Reimagined.
 					</h4>
@@ -118,10 +117,9 @@ export default function IndexPage() {
 				<div className="flex w-full max-w-4xl text-center justify-center gap-5" id="team">
 					<h1 className={title()}>Our Team&nbsp;</h1>
 				</div>
-				<ScrollShadow hideScrollBar className="w-[700px] h-[300px]">
-					<h4 className="text-black/80 font-medium text-large">Psych. Alina Postu graduated from the Faculty of Psychology in Iasi in 2019 and a Master in Clinical Psychology and Psychotherapy in 2021, at the same time following a training program at the Institute for Training in Cognitive-Behavioural Therapy in Iasi (IFTECC) for 2 years and 3 months. During her student years, she took part in various volunteering projects at the UN Youth Association and at the European Federation of Psychology Students (EFPSA), where she also coordinated the Mind the Mind project aimed at destigmatizing mental disorders. He worked as a clinical psychologist at the Solidarity and Hope Foundation in Iași with children from underprivileged backgrounds to whom he provided assessment, counselling & psychological education. Her passion for reading and philosophy leads her to look at life with a deep curiosity towards the complexity of man even in its simplest aspects. He is a visionary when it comes to his career and constantly invests in personal and professional development to provide a safe space for people who invest with confidence when they step into the clinic.</h4>
+				<ScrollShadow hideScrollBar className="w-full max-w-md md:max-w-xl lg:max-w-4xl h-64">
+					<h4 className={subtitle({ class: "mt-3" })}>Psych. Alina Postu graduated from the Faculty of Psychology in Iasi in 2019 and a Master in Clinical Psychology and Psychotherapy in 2021, at the same time following a training program at the Institute for Training in Cognitive-Behavioural Therapy in Iasi (IFTECC) for 2 years and 3 months. During her student years, she took part in various volunteering projects at the UN Youth Association and at the European Federation of Psychology Students (EFPSA), where she also coordinated the Mind the Mind project aimed at destigmatizing mental disorders. He worked as a clinical psychologist at the Solidarity and Hope Foundation in Iași with children from underprivileged backgrounds to whom he provided assessment, counselling & psychological education. Her passion for reading and philosophy leads her to look at life with a deep curiosity towards the complexity of man even in its simplest aspects. He is a visionary when it comes to his career and constantly invests in personal and professional development to provide a safe space for people who invest with confidence when they step into the clinic.</h4>
 				</ScrollShadow>
-
 				<div className="flex w-full max-w-4xl text-center justify-center gap-5">
 					<h1 className={title()}>FAQ's&nbsp;</h1>
 				</div>
@@ -163,14 +161,14 @@ export default function IndexPage() {
 					</p>
 					<div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
 						{/* Email Card */}
-						<div className=" shadow-md rounded-lg p-6 text-center border text-gray-600">
-							<h2 className="text-lg font-semibold text-gray-900">Email</h2>
-							<p className="mt-2 text-gray-600">alinageorgianapostu11@gmail.com</p>
+						<div className=" shadow-md rounded-lg p-6 text-center border">
+							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Email</h2>
+							<p className={subtitle({ class: "text-lg font-semibold" })}>alinageorgianapostu11@gmail.com</p>
 						</div>
 						{/* Phone Number Card */}
-						<div className=" shadow-md rounded-lg p-6 text-center border text-gray-600">
-							<h2 className="text-lg font-semibold text-gray-900">Phone Number</h2>
-							<p className="mt-2 text-gray-600">+40 744 681 577</p>
+						<div className=" shadow-md rounded-lg p-6 text-center border">
+							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Phone Number</h2>
+							<p className={subtitle({ class: "text-lg font-semibold" })}>+40 744 681 577</p>
 						</div>
 					</div>
 				</div>
