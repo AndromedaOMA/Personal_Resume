@@ -5,17 +5,17 @@ import { ScrollShadow } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
-	const smoothScrollTo = (target) => {
-		const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+	const smoothScrollTo = (target: HTMLElement) => {
+		const targetTop = target.getBoundingClientRect().top + window.scrollY;
 		window.scrollTo({
 			top: targetTop,
 			behavior: 'smooth'
 		});
 	};
 
-	const handleNotifyMeClick = (e) => {
+	const handleNotifyMeClick = (e: React.MouseEvent<HTMLButtonElement>) => {
 		e.preventDefault();
-		const target = document.querySelector("#contacts");
+		const target = document.querySelector("#contacts") as HTMLElement;
 		smoothScrollTo(target);
 	};
 
