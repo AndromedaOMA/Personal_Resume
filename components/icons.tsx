@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 
 export const LogoDesc: React.FC<IconSvgProps> = ({
-	size = 100,
+	size = 90,
 	width,
 	height,
 	...props
@@ -13,13 +13,13 @@ export const LogoDesc: React.FC<IconSvgProps> = ({
 	<svg
 		version="1.0"
 		xmlns="http://www.w3.org/2000/svg"
-		width={size || height}
+		width="100.000000pt"
 		height={size || height}
-		viewBox="0 0 200.000000 400.000000"
+		viewBox="0 0 300.000000 300.000000"
 		preserveAspectRatio="xMidYMid meet"
 		{...props}>
 
-		<g transform="translate(-220.000000,370.000000) scale(0.12,-0.12)"
+		<g transform="translate(-180.000000,340.000000) scale(0.13,-0.13)"
 			fill="gray"
 			stroke="none">
 			<path d="M1076 1519 c-22 -17 -26 -29 -26 -68 0 -68 25 -89 110 -93 62 -3 65
