@@ -22,9 +22,26 @@ import {
 	DiscordIcon,
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
+import { Logo, LogoDesc } from "@/components/icons";
 
 export const Navbar = () => {
+    const smoothScrollTo = (target) => {
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: targetTop,
+            behavior: 'smooth'
+        });
+    };
+	const handleAboutClick = (e) => {
+        e.preventDefault();
+        const target = document.querySelector("#about");
+        smoothScrollTo(target);
+    };
+	const handleTeamClick = (e) => {
+		e.preventDefault();
+		const target = document.querySelector("#team");
+		smoothScrollTo(target);
+	};
 
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky">
@@ -32,10 +49,12 @@ export const Navbar = () => {
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
 						<Logo />
-						<p className="font-bold text-inherit">startupLOGO</p>
+						{/* <LogoDesc /> */}
+						{/* <p className="font-bold text-inherit">Soul Steps</p> */}
 					</NextLink>
 				</NavbarBrand>
-				<div className="hidden sm:flex gap-4 justify-start ml-2">
+				
+				<div className="hidden mt-5 sm:flex gap-4 justify-start ml-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
@@ -43,8 +62,9 @@ export const Navbar = () => {
 									linkStyles({ color: "foreground" }),
 									"data-[active=true]:text-primary data-[active=true]:font-medium"
 								)}
-								color="foreground"
+								color="background"
 								href={item.href}
+								onClick={item.label === "About" ? handleAboutClick : handleTeamClick}
 							>
 								{item.label}
 							</NextLink>
