@@ -18,7 +18,7 @@ export default function DefaultLayout({
 				<Link
 					isExternal
 					className="flex items-center gap-1 text-current"
-					href="https://github.com/AndromedaOMA"
+					href="https://www.linkedin.com/in/marius-alexandru-olaru-390599229/"
 					title="nextui.org homepage"
 				>
 					<span className="text-default-600">Page designed by</span>

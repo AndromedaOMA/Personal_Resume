@@ -9,6 +9,8 @@ import {
 	NavbarMenuItem,
 } from "@nextui-org/react";
 
+import React, { useState } from "react";
+
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
@@ -20,6 +22,8 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo, LogoDesc } from "@/components/icons";
 
 export const Navbar = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+
 	const smoothScrollTo = (target: HTMLElement) => {
 		const targetTop = target.getBoundingClientRect().top + window.scrollY;
 		window.scrollTo({
@@ -31,11 +35,13 @@ export const Navbar = () => {
 		e.preventDefault();
 		const target = document.querySelector("#about");
 		smoothScrollTo(target as HTMLElement);
+		setMenuOpen(false); 
 	};
 	const handleTeamClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const target = document.querySelector("#team");
 		smoothScrollTo(target as HTMLElement);
+		setMenuOpen(false); 
 	};
 
 	return (
