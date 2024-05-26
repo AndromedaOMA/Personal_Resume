@@ -91,7 +91,7 @@ export const Navbar = () => {
 
 			<NavbarContent className="sm:hidden basis-1 pl-4 mt-2" justify="end">
 				<ThemeSwitch />
-				<NavbarMenuToggle />
+				{/* <NavbarMenuToggle /> */}
 			</NavbarContent>
 
 			<NavbarMenu>
