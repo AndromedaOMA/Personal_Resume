@@ -25,22 +25,22 @@ import {
 import { Logo, LogoDesc } from "@/components/icons";
 
 export const Navbar = () => {
-    const smoothScrollTo = (target) => {
-        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({
-            top: targetTop,
-            behavior: 'smooth'
-        });
-    };
-	const handleAboutClick = (e) => {
-        e.preventDefault();
-        const target = document.querySelector("#about");
-        smoothScrollTo(target);
-    };
-	const handleTeamClick = (e) => {
+	const smoothScrollTo = (target: HTMLElement) => {
+		const targetTop = target.getBoundingClientRect().top + window.scrollY;
+		window.scrollTo({
+			top: targetTop,
+			behavior: 'smooth'
+		});
+	};
+	const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault();
+		const target = document.querySelector("#about");
+		smoothScrollTo(target as HTMLElement);
+	};
+	const handleTeamClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const target = document.querySelector("#team");
-		smoothScrollTo(target);
+		smoothScrollTo(target as HTMLElement);
 	};
 
 	return (
