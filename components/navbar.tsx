@@ -16,13 +16,8 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-	TwitterIcon,
-	GithubIcon,
-	DiscordIcon,
-} from "@/components/icons";
 
-import { Logo, LogoDesc } from "@/components/icons";
+import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
 	const smoothScrollTo = (target: HTMLElement) => {
