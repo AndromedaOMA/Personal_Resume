@@ -49,7 +49,7 @@ export const Navbar = () => {
 					</NextLink>
 				</NavbarBrand>
 
-				<div className="hidden mt-5 sm:flex gap-4 justify-start ml-2">
+				<div className="hidden mt-2 sm:flex gap-4 justify-start ml-2">
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
@@ -68,7 +68,7 @@ export const Navbar = () => {
 				</div>
 			</NavbarContent>
 
-			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
+			<NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full mt-2" justify="end">
 				<NavbarItem className="hidden sm:flex gap-2">
 					{/* <Link isExternal href={siteConfig.links.twitter}>
 						<TwitterIcon className="text-default-500" />
@@ -83,7 +83,7 @@ export const Navbar = () => {
 				</NavbarItem>
 			</NavbarContent>
 
-			<NavbarContent className="sm:hidden basis-1 pl-4 mt-3" justify="end">
+			<NavbarContent className="sm:hidden basis-1 pl-4 mt-2" justify="end">
 				<ThemeSwitch />
 				<NavbarMenuToggle />
 			</NavbarContent>

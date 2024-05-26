@@ -19,7 +19,7 @@ export const LogoDesc: React.FC<IconSvgProps> = ({
 		preserveAspectRatio="xMidYMid meet"
 		{...props}>
 
-		<g transform="translate(-220.000000,390.000000) scale(0.12,-0.12)"
+		<g transform="translate(-220.000000,370.000000) scale(0.12,-0.12)"
 			fill="gray"
 			stroke="none">
 			<path d="M1076 1519 c-22 -17 -26 -29 -26 -68 0 -68 25 -89 110 -93 62 -3 65

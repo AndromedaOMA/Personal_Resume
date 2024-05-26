@@ -22,14 +22,53 @@ export default function IndexPage() {
 	return (
 		<DefaultLayout>
 			<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-				<div className="inline-block max-w-xlg text-center justify-center">
+				{/* <div className="inline-block max-w-xlg text-center justify-center">
 					<h1 className={title()}>Bringing Affordable, Personalised Mental Health Support <br /> To Your Fingertips!</h1>
 					<h4 className={subtitle({ class: "mt-3" })}>
 						Peace of Mind, Reimagined.
 					</h4>
-				</div>
+				</div> */}
 
 				<Card
+					isFooterBlurred
+					radius="lg"
+					className="border-none"
+				>
+					<div className="relative">
+						<Image
+							src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
+							alt="Cool Background Image"
+							style={{ width: '725px', height: '300px' }}
+							className="z-0 w-full h-full scale-125 -translate-y-6 object-cover shadow-small"
+						/>
+						<div className="absolute inset-0 flex justify-center items-center text-center">
+							<div className="max-w-xlg text-center">
+								<h1 className={title()}>
+									Bringing Affordable, Personalised Mental Health Support <br /> To Your Fingertips!
+								</h1>
+								<h4 className={subtitle({ class: "mt-3" })}>
+									Peace of Mind, Reimagined.
+								</h4>
+							</div>
+						</div>
+					</div>
+					<CardFooter className="justify-between before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+						<p className="text-tiny text-black/80" style={{ marginLeft: '100px' }}>Available soon.</p>
+						<Button
+							className="text-tiny text-black/80 bg-black/20"
+							variant="flat"
+							color="default"
+							radius="lg"
+							size="sm"
+							onClick={handleNotifyMeClick}
+						>
+							Get In Touch
+						</Button>
+					</CardFooter>
+				</Card>
+
+
+				{/* <Card
 					isFooterBlurred
 					radius="lg"
 					className="border-none"
@@ -53,7 +92,7 @@ export default function IndexPage() {
 							Notify me
 						</Button>
 					</CardFooter>
-				</Card>
+				</Card> */}
 
 
 
