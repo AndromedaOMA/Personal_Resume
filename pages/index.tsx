@@ -135,7 +135,7 @@ export default function IndexPage() {
 							removeWrapper
 							alt="Card example background"
 							className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-							src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+							src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
 						/>
 					</Card>
 
@@ -148,7 +148,7 @@ export default function IndexPage() {
 							removeWrapper
 							alt="Relaxing app background"
 							className="z-0 w-full h-full object-cover"
-							src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
+							src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
 						/>
 					</Card>
 				</div>
