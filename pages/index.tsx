@@ -170,9 +170,9 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7 order-1"
+						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">FlappyNet</p>
 								<ul className="text-sm space-y-1 mb-4">
@@ -209,7 +209,7 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5 order-2"
+						className="col-span-12 sm:col-span-5"
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -233,7 +233,7 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7 order-3"
+						className="col-span-12 sm:col-span-7"
 					>
 						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -273,7 +273,7 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5 order-4"
+						className="col-span-12 sm:col-span-5"
 					>
 						<Card className="w-full h-[300px]">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -299,9 +299,9 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7 order-5"
+						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">Neural Networks Laboratories</p>
 								<ul className="text-sm space-y-1 mb-4">
@@ -338,7 +338,7 @@ export default function IndexPage() {
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5 order-6"
+						className="col-span-12 sm:col-span-5"
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
