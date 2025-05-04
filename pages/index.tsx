@@ -3,6 +3,20 @@ import { title, subtitle } from "@/components/primitives";
 import { Image, Card, CardFooter, CardBody, Button, CardHeader, Input, Accordion, AccordionItem } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+function useIsSmallScreen() {
+	const [isSmall, setIsSmall] = useState(false);
+
+	useEffect(() => {
+		const checkScreen = () => setIsSmall(window.innerWidth < 640);
+		checkScreen(); // initial check
+		window.addEventListener("resize", checkScreen);
+		return () => window.removeEventListener("resize", checkScreen);
+	}, []);
+
+	return isSmall;
+}
 
 export default function IndexPage() {
 	const smoothScrollTo = (target: HTMLElement) => {
@@ -18,6 +32,8 @@ export default function IndexPage() {
 		const target = document.querySelector("#contacts") as HTMLElement;
 		smoothScrollTo(target);
 	};
+
+	const isSmall = useIsSmallScreen();
 
 	const skills = [
 		{
@@ -150,7 +166,7 @@ export default function IndexPage() {
 				<div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
 					<motion.div
 						initial={{ x: -300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						// animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
@@ -189,7 +205,7 @@ export default function IndexPage() {
 					</motion.div>
 					<motion.div
 						initial={{ x: 300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						// animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
@@ -213,7 +229,7 @@ export default function IndexPage() {
 
 					<motion.div
 						initial={{ x: -300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.5, once: true }}
 						className="col-span-12 sm:col-span-7 order-3"
@@ -252,7 +268,7 @@ export default function IndexPage() {
 					</motion.div>
 					<motion.div
 						initial={{ x: 300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.5, once: true }}
 						className="col-span-12 sm:col-span-5 order-4"
@@ -277,7 +293,7 @@ export default function IndexPage() {
 
 					<motion.div
 						initial={{ x: -300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7 order-5"
@@ -315,7 +331,7 @@ export default function IndexPage() {
 					</motion.div>
 					<motion.div
 						initial={{ x: 300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
+						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5 order-6"
