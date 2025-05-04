@@ -65,47 +65,52 @@ export default function IndexPage() {
 	return (
 		<DefaultLayout>
 			<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-				<Card isFooterBlurred radius="lg" className="border-none">
-					<div className="relative">
-						<Image
-							src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
-							alt="Cool Background Image"
-							style={{ width: '725px', height: '300px' }}
-							className="z-0 w-full h-full scale-125 -translate-y-6 object-cover shadow-small"
-						/>
+			<Card isFooterBlurred radius="lg" className="border-none w-full max-w-[725px] mx-auto">
+			<div className="relative">
+				<Image
+				src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
+				alt="Cool Background Image"
+				className="z-0 w-full h-[220px] sm:h-[300px] scale-125 -translate-y-6 object-cover shadow-small"
+				/>
 
-						<div className="absolute inset-0 flex items-center px-10">
-							<div className="w-[160px] h-[220px] flex justify-center items-center">
-								<Image
-									src="https://avatars.githubusercontent.com/u/116078879?v=4"
-									alt="Profile"
-									className="w-full h-full object-cover rounded-xl shadow-lg"
-								/>
-							</div>
+				<div className="absolute inset-0 flex items-center px-4 sm:px-10 py-4 gap-4">
+				<div className="w-[70px] h-[100px] sm:w-[120px] sm:h-[180px] flex-shrink-0">
+					<Image
+					src="https://avatars.githubusercontent.com/u/116078879?v=4"
+					alt="Profile"
+					className="w-full h-full object-cover rounded-xl shadow-lg"
+					/>
+				</div>
 
-							<div className="w-3/4 text-black ml-6">
-								<h1 className="text-2xl font-bold">Hi 👋, I'm Olaru Marius-Alexandru</h1>
-								<p className="mt-2 text-md">
-									A passionate software developer from Romania interested in understanding the concepts of Deep Learning and Machine Learning.
-								</p>
-							</div>
-						</div>
-					</div>
+				<div className="flex-1 text-black">
+					<h1 className="text-sm sm:text-2xl font-bold">
+					Hi 👋, I'm Olaru Marius-Alexandru
+					</h1>
+					<p className="mt-1 text-xs sm:text-md leading-tight">
+					A passionate software developer
+					<span className="hidden sm:inline">
+						{" "}
+						from Romania interested in Deep Learning & Machine Learning.
+					</span>
+					</p>
+				</div>
+				</div>
+			</div>
 
-					<CardFooter className="justify-between before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-						<p className="text-tiny text-black/80" style={{ marginLeft: '100px' }}></p>
-						<Button
-							className="text-tiny text-black/80 bg-black/20"
-							variant="flat"
-							color="default"
-							radius="lg"
-							size="sm"
-							onClick={handleNotifyMeClick}
-						>
-							Get In Touch
-						</Button>
-					</CardFooter>
-				</Card>
+			<CardFooter className="justify-end before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+				<Button
+				className="text-tiny text-black/80 bg-black/20"
+				variant="flat"
+				color="default"
+				radius="lg"
+				size="sm"
+				onClick={handleNotifyMeClick}
+				>
+				Get In Touch
+				</Button>
+			</CardFooter>
+			</Card>
+
 
 
 
@@ -404,11 +409,11 @@ export default function IndexPage() {
 						Here are my contact details: <br />
 					</p>
 					<div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-						<div className=" shadow-md rounded-lg p-6 text-center border">
+						<div className=" shadow-md rounded-lg p-6 text-center">
 							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Email</h2>
 							<p className={subtitle({ class: "text-lg font-semibold" })}>marius.alexandru.olaru@gmail.com</p>
 						</div>
-						<div className=" shadow-md rounded-lg p-6 text-center border">
+						<div className=" shadow-md rounded-lg p-6 text-center">
 							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Phone Number</h2>
 							<p className={subtitle({ class: "text-lg font-semibold" })}>+40 737 421 575</p>
 						</div>
