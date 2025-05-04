@@ -74,7 +74,8 @@ export default function IndexPage() {
 						/>
 
 						<div className="absolute inset-0 flex items-center px-4 sm:px-10 py-4 gap-4">
-							<div className="w-[70px] h-[100px] sm:w-[120px] sm:h-[180px] flex-shrink-0">
+							{/* Increased the image size here */}
+							<div className="w-[100px] h-[140px] sm:w-[160px] sm:h-[220px] flex-shrink-0">
 								<Image
 									src="https://avatars.githubusercontent.com/u/116078879?v=4"
 									alt="Profile"
@@ -110,7 +111,6 @@ export default function IndexPage() {
 						</Button>
 					</CardFooter>
 				</Card>
-
 
 
 
@@ -216,31 +216,7 @@ export default function IndexPage() {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.5, once: true }}
-						className="col-span-12 sm:col-span-5 order-3"
-					>
-						<Card className="w-full h-[300px]">
-							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-large text-black/40 uppercase font-bold">description</p>
-								<h4 className="text-black/80 font-medium text-md">
-									Developed better the subtle concepts of Data Science using PySpark!
-									Course supported by E.on Software Development that established the foundations of working with Big Data.
-									This project aims to analyze the energy consumption of a group of fictitious consumers, over the course of a year, of an energy company, using the analysis techniques of the Apache Spark engine.
-								</h4>
-							</CardHeader>
-							<Image
-								removeWrapper
-								alt="Card example background"
-								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
-							/>
-						</Card>
-					</motion.div>
-					<motion.div
-						initial={{ x: 300, opacity: 0 }}
-						whileInView={{ x: 0, opacity: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.5, once: true }}
-						className="col-span-12 sm:col-span-7 order-4"
+						className="col-span-12 sm:col-span-7 order-3"
 					>
 						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -272,6 +248,30 @@ export default function IndexPage() {
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: 300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.5, once: true }}
+						className="col-span-12 sm:col-span-5 order-4"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Developed better the subtle concepts of Data Science using PySpark!
+									Course supported by E.on Software Development that established the foundations of working with Big Data.
+									This project aims to analyze the energy consumption of a group of fictitious consumers, over the course of a year, of an energy company, using the analysis techniques of the Apache Spark engine.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card example background"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
 						</Card>
 					</motion.div>
 
@@ -307,7 +307,7 @@ export default function IndexPage() {
 									removeWrapper
 									alt="Flappy Bird AI background"
 									className="w-full h-full object-cover"
-									src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
+									src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8NqqKaFpPuE5tuLVMiMtQ0IIJ5sTW5lX_RcDRxd7624DJ7a2w"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 							</div>
@@ -323,14 +323,14 @@ export default function IndexPage() {
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-large text-black/40 uppercase font-bold">description</p>
-								<h4 className="text-black/80 font-medium text-md">
+								<h4 className="text-white/90 font-medium text-md">
 									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers.								</h4>
 							</CardHeader>
 							<Image
 								removeWrapper
 								alt="Card background"
 								className="z-0 w-full h-full object-cover"
-								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8vadhsOuk1F5mucqxzFknGjNWBqB3hm76J2wh0gVTLZrRn3lS"
 							/>
 						</Card>
 					</motion.div>
