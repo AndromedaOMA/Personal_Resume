@@ -5,22 +5,22 @@ export const siteConfig = {
 	description: "Digital Therapist",
 	navItems: [
 		{
-			label: "About",
-			href: "#about",
+			label: "Projects",
+			href: "#projects",
 		},
 		{
-			label: "Team",
-			href: "#team",
+			label: "Contact",
+			href: "#contact",
 		},
 	],
 	navMenuItems: [
 		{
-			label: "About",
-			href: "#about",
+			label: "Projects",
+			href: "#projects",
 		},
 		{
-			label: "Team",
-			href: "#team",
+			label: "Contact",
+			href: "#contact",
 		},
 	],
 	links: {

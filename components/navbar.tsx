@@ -31,15 +31,15 @@ export const Navbar = () => {
 			behavior: 'smooth'
 		});
 	};
-	const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+	const handleProjectsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
-		const target = document.querySelector("#about");
+		const target = document.querySelector("#projects");
 		smoothScrollTo(target as HTMLElement);
 		setMenuOpen(false); 
 	};
 	const handleTeamClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
-		const target = document.querySelector("#team");
+		const target = document.querySelector("#contact");
 		smoothScrollTo(target as HTMLElement);
 		setMenuOpen(false); 
 	};
@@ -49,8 +49,8 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
-						<Logo />
-						<LogoDesc />
+						{/* <Logo />
+						<LogoDesc /> */}
 						{/* <p className="font-bold text-inherit">Soul Steps</p> */}
 					</NextLink>
 				</NavbarBrand>
@@ -65,7 +65,7 @@ export const Navbar = () => {
 								)}
 								color="background"
 								href={item.href}
-								onClick={item.label === "About" ? handleAboutClick : handleTeamClick}
+								onClick={item.label === "Projects" ? handleProjectsClick : handleTeamClick}
 							>
 								{item.label}
 							</NextLink>
@@ -109,7 +109,7 @@ export const Navbar = () => {
 								// }
 								color="foreground"
 								size="lg"
-								onClick={item.label === "About" ? handleAboutClick : handleTeamClick}
+								onClick={item.label === "Projects" ? handleProjectsClick : handleTeamClick}
 
 							>
 								{item.label}

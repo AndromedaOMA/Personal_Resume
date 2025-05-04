@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { title, subtitle } from "@/components/primitives";
-import { Image, Card, CardFooter, Button, CardHeader, Input, Accordion, AccordionItem } from "@nextui-org/react";
-import { ScrollShadow } from "@nextui-org/react";
+import { Image, Card, CardFooter, CardBody, Button, CardHeader, Input, Accordion, AccordionItem } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
+import { motion } from "framer-motion";
 
 export default function IndexPage() {
 	const smoothScrollTo = (target: HTMLElement) => {
@@ -19,21 +19,53 @@ export default function IndexPage() {
 		smoothScrollTo(target);
 	};
 
+	const skills = [
+		{
+			title: "PyTorch",
+			img: "https://pytorch.org/assets/images/logo-icon.svg",
+			type: "Library",
+		},
+		{
+			title: "NumPy",
+			img: "https://numpy.org/images/logo.svg",
+			type: "Library",
+		},
+		{
+			title: "Python",
+			img: "https://camo.githubusercontent.com/f3f0b1dbaadd99a1cfe6b4e8a3da26e69aeec36517c26c9945a71e850c33ec8b/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f38303070782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
+			type: "Language",
+		},
+		{
+			title: "PySpark",
+			img: "https://spark.apache.org/images/spark-logo-rev.svg",
+			type: "Library",
+		},
+		{
+			title: "C",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+			type: "Language",
+		},
+		{
+			title: "C++",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
+			type: "Language",
+		},
+		{
+			title: "Git",
+			img: "https://www.svgrepo.com/show/303548/git-icon-logo.svg",
+			type: "Tool",
+		},
+		{
+			title: "MySQL",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+			type: "Relational Db",
+		},
+	];
+
 	return (
 		<DefaultLayout>
 			<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-				{/* <div className="inline-block max-w-xlg text-center justify-center">
-					<h1 className={title()}>Bringing Affordable, Personalised Mental Health Support <br /> To Your Fingertips!</h1>
-					<h4 className={subtitle({ class: "mt-3" })}>
-						Peace of Mind, Reimagined.
-					</h4>
-				</div> */}
-
-				<Card
-					isFooterBlurred
-					radius="lg"
-					className="border-none"
-				>
+				<Card isFooterBlurred radius="lg" className="border-none">
 					<div className="relative">
 						<Image
 							src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
@@ -41,19 +73,27 @@ export default function IndexPage() {
 							style={{ width: '725px', height: '300px' }}
 							className="z-0 w-full h-full scale-125 -translate-y-6 object-cover shadow-small"
 						/>
-						<div className="absolute inset-0 flex justify-center items-center text-center">
-							<div className="max-w-xlg text-center">
-								<h1 className={title()}>
-									Bringing Affordable, Personalised Mental Health Support <br /> To Your Fingertips!
-								</h1>
-								<h4 className={subtitle({ class: "mt-3" })}>
-									Peace of Mind, Reimagined.
-								</h4>
+
+						<div className="absolute inset-0 flex items-center px-10">
+							<div className="w-[160px] h-[220px] flex justify-center items-center">
+								<Image
+									src="https://avatars.githubusercontent.com/u/116078879?v=4"
+									alt="Profile"
+									className="w-full h-full object-cover rounded-xl shadow-lg"
+								/>
+							</div>
+
+							<div className="w-3/4 text-black ml-6">
+								<h1 className="text-2xl font-bold">Hi 👋, I'm Olaru Marius-Alexandru</h1>
+								<p className="mt-2 text-md">
+									A passionate software developer from Romania interested in understanding the concepts of Deep Learning and Machine Learning.
+								</p>
 							</div>
 						</div>
 					</div>
+
 					<CardFooter className="justify-between before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-						<p className="text-tiny text-black/80" style={{ marginLeft: '100px' }}>Available soon.</p>
+						<p className="text-tiny text-black/80" style={{ marginLeft: '100px' }}></p>
 						<Button
 							className="text-tiny text-black/80 bg-black/20"
 							variant="flat"
@@ -66,6 +106,8 @@ export default function IndexPage() {
 						</Button>
 					</CardFooter>
 				</Card>
+
+
 
 
 				{/* <Card
@@ -95,83 +137,244 @@ export default function IndexPage() {
 				</Card> */}
 
 
+				<div id="projects"> <p><br /><br /></p> </div>
 
-				<div className="inline-block max-w-4xl text-center justify-center gap-5" id="about">
-					<h1 className={title()}>How SoulSteps Is Unique?&nbsp;</h1>
+				<div className="inline-block max-w-4xl text-center justify-center gap-5" id="projects">
+					<h1 className={title()}>My personal projects&nbsp;</h1>
 				</div>
 				<div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-					<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
-						<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-							<p className="text-tiny text-black/40 uppercase font-bold">Psychological Assessment</p>
-							<h4 className="text-black/80 font-medium text-large">Evidence-based scales and questionnaires for depression, anxiety and personality disorders.</h4>
-						</CardHeader>
-						<Image
-							removeWrapper
-							alt="Card background"
-							className="z-0 w-full h-full object-cover"
-							src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
-						/>
-					</Card>
+					<motion.div
+						initial={{ x: -300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						// animate={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">FlappyNet</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> dec. 2024 – ian. 2025</li>
+									<li>
+										<strong>Tech Stack:</strong> Reinforcement Learning · Deep Neural Networks (DNN) · Deep Q Networks (DQN) · PyTorch · Convolutional Neural Networks (CNN) · Object-Oriented Programming (OOP) · Deep Learning
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/FlappyNet"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: 300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						// animate={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Implemented a Deep Q-Learning algorithm with Convolutional Neural Networks to train an AI agent to play Flappy Bird. Built using PyTorch, demonstrating advanced reinforcement learning techniques.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover"
+								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+							/>
+						</Card>
+					</motion.div>
 
-					<Card className="w-full h-[300px] col-span-12 sm:col-span-5">
-						<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-							<p className="text-tiny text-black/40 uppercase font-bold">Educational Video Modules</p>
-							<h4 className="text-black/80 font-medium text-large">Step by step eduction in understanding your problem and personality structure.</h4>
-						</CardHeader>
-						<Image
-							removeWrapper
-							alt="Card background"
-							className="z-0 w-full h-full object-cover"
-							src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
-						/>
-					</Card>
+					<motion.div
+						initial={{ x: -300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.5, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Developed better the subtle concepts of Data Science using PySpark!
+									Course supported by E.on Software Development that established the foundations of working with Big Data.
+									This project aims to analyze the energy consumption of a group of fictitious consumers, over the course of a year, of an energy company, using the analysis techniques of the Apache Spark engine.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card example background"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: 300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.5, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">
+									Advanced Analytics with Apache Spark</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> mar. 2025 - apr. 2025</li>
+									<li>
+										<strong>Tech Stack:</strong>  PySpark · Apache Spark · Data Science · Big Data · Problem Solving · Apache Spark ML · MLLib
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Advanced_Analytics_with_Apache_Spark---E.On_Software_Development"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Advanced Analytics background"
+									className="w-full h-full object-cover"
+									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
 
-					<Card className="w-full h-[300px] col-span-12 sm:col-span-5">
-						<CardHeader className="absolute z-10 top-1 flex-col items-start">
-							<p className="text-tiny text-black/40 uppercase font-bold">Personalised Techniques And Exercises</p>
-							<h4 className="text-black font-medium text-large">Using CBT protocols, you receive daily exercises to work on your therapy goals.</h4>
-						</CardHeader>
-						<Image
-							removeWrapper
-							alt="Card example background"
-							className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-							src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
-						/>
-					</Card>
-
-					<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
-						<CardHeader className="absolute z-10 top-1 flex-col items-start">
-							<p className="text-tiny text-black/40 uppercase font-bold">Community Support Between Users</p>
-							<h4 className="text-black/80 font-medium text-large">If you're facing an intense emotional problem, you can ask our community of users for support 24/7.</h4>
-						</CardHeader>
-						<Image
-							removeWrapper
-							alt="Relaxing app background"
-							className="z-0 w-full h-full object-cover"
-							src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
-						/>
-					</Card>
+					<motion.div
+						initial={{ x: -300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">Neural Networks Laboratories</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> sept. 2024 - ian. 2025</li>
+									<li>
+										<strong>Tech Stack:</strong> Deep Neural Networks (DNN) · PyTorch · NumPy · Reinforcement Learning · Convolutional Neural Networks (CNN) · Deep Learning · ResNet · Object-Oriented Programming (OOP) · Git · Python (Programming Language) · Pycharm · GitHub
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Neural_Networks---Laboratories"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: 300, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers.								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover"
+								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+							/>
+						</Card>
+					</motion.div>
 				</div>
 
-				<div className="flex w-full max-w-4xl text-center justify-center gap-5" id="team">
-					<h1 className={title()}>Our Team&nbsp;</h1>
+				<div> <p><br /><br /></p> </div>
+
+				<div className="flex w-full max-w-4xl text-center justify-center gap-5">
+					<h1 className={title()}>Software Skills&nbsp;</h1>
 				</div>
-				<ScrollShadow hideScrollBar className="w-full max-w-md md:max-w-xl lg:max-w-4xl h-64">
-					<h4 className={subtitle({ class: "mt-3" })}>Psych. Alina Postu graduated from the Faculty of Psychology in Iasi in 2019 and a Master in Clinical Psychology and Psychotherapy in 2021, at the same time following a training program at the Institute for Training in Cognitive-Behavioural Therapy in Iasi (IFTECC) for 2 years and 3 months. During her student years, she took part in various volunteering projects at the UN Youth Association and at the European Federation of Psychology Students (EFPSA), where she also coordinated the Mind the Mind project aimed at destigmatizing mental disorders. He worked as a clinical psychologist at the Solidarity and Hope Foundation in Iași with children from underprivileged backgrounds to whom he provided assessment, counselling & psychological education. Her passion for reading and philosophy leads her to look at life with a deep curiosity towards the complexity of man even in its simplest aspects. He is a visionary when it comes to his career and constantly invests in personal and professional development to provide a safe space for people who invest with confidence when they step into the clinic.</h4>
-				</ScrollShadow>
+				<div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+					{skills.map((skill, index) => (
+						<Card
+							key={index}
+							// isPressable
+							shadow="sm"
+							className="bg-gray text-white"
+							onPress={() => console.log(`${skill.title} pressed`)}
+						>
+							<CardBody className="overflow-visible p-0">
+								<Image
+									alt={skill.title}
+									className="w-full object-contain h-[140px] p-4"
+									radius="lg"
+									shadow="sm"
+									src={skill.img}
+									width="100%"
+								/>
+							</CardBody>
+							<CardFooter className="text-small justify-between">
+								<b>{skill.title}</b>
+								<p className="text-default-500">{skill.type}</p>
+							</CardFooter>
+						</Card>
+					))}
+				</div>
+
+				<div> <p><br /><br /></p> </div>
+
 				<div className="flex w-full max-w-4xl text-center justify-center gap-5">
 					<h1 className={title()}>FAQ's&nbsp;</h1>
 				</div>
 				<div className="inline-block max-w-4xl justify-center gqp-5">
 					<Accordion variant="bordered">
-						<AccordionItem key="1" aria-label="Accordion 1" title="Do I still need a therapist if I use this app?">
-							Yes, we recommend to go at least once a month for a follow-up session.
+						<AccordionItem key="1" aria-label="Accordion 1" title="What is my next goal?">
+							Completion of the bachelor's thesis requiring the improvement of real-time speech by using Deep Learning and Reinforcement Learning techniques.
 						</AccordionItem>
-						<AccordionItem key="2" aria-label="Accordion 2" title="Can I speak with a live therapist through the app?">
-							Yes, our premium plans include access to live sessions with licensed therapists. <br /> You can schedule these sessions directly through the app.
-						</AccordionItem>
-						<AccordionItem key="3" aria-label="Accordion 3" title="Is my data secure?">
-							We take your privacy and data security very seriously. <br /> All your information is encrypted and stored.
+						<AccordionItem key="2" aria-label="Accordion 2" title="What are my current interests?">
+							Interested in Transformer architectures and Reinforcement Learning algorithms.
 						</AccordionItem>
 					</Accordion>
 				</div>
@@ -191,26 +394,29 @@ export default function IndexPage() {
 					</div>
 				</div> */}
 
-				<div className="flex w-full max-w-4xl text-center justify-center gap-5">
-					<h1 className={title()}>Want to be part of SoulSteps?&nbsp;</h1>
+				<div> <p><br /><br /></p> </div>
+
+				<div className="flex w-full max-w-4xl text-center justify-center gap-5" id="contact">
+					<h1 className={title()}>Do you want to stay in touch?&nbsp;</h1>
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<p className="text-center" id="contacts">
 						Here are my contact details: <br />
 					</p>
 					<div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-						{/* Email Card */}
 						<div className=" shadow-md rounded-lg p-6 text-center border">
 							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Email</h2>
-							<p className={subtitle({ class: "text-lg font-semibold" })}>alinageorgianapostu11@gmail.com</p>
+							<p className={subtitle({ class: "text-lg font-semibold" })}>marius.alexandru.olaru@gmail.com</p>
 						</div>
-						{/* Phone Number Card */}
 						<div className=" shadow-md rounded-lg p-6 text-center border">
 							<h2 className={subtitle({ class: "text-lg font-semibold" })}>Phone Number</h2>
-							<p className={subtitle({ class: "text-lg font-semibold" })}>+40 744 681 577</p>
+							<p className={subtitle({ class: "text-lg font-semibold" })}>+40 737 421 575</p>
 						</div>
 					</div>
 				</div>
+
+				<div> <p><br /><br /></p> </div>
+
 			</section>
 		</DefaultLayout>
 	);
