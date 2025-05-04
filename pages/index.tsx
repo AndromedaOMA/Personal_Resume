@@ -163,11 +163,11 @@ export default function IndexPage() {
 				<div className="inline-block max-w-4xl text-center justify-center gap-5" id="projects">
 					<h1 className={title()}>My personal projects&nbsp;</h1>
 				</div>
-				<div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
+				<div className="max-w-[900px] gap-4 grid grid-cols-1 sm:grid-cols-12 px-4 sm:px-8">
 					<motion.div
-						initial={{ x: -300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
-						// animate={{ x: 0, opacity: 1 }}
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7 order-1"
@@ -204,9 +204,9 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 					<motion.div
-						initial={{ x: 300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
-						// animate={{ x: 0, opacity: 1 }}
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5 order-2"
@@ -228,10 +228,11 @@ export default function IndexPage() {
 					</motion.div>
 
 					<motion.div
-						initial={{ x: -300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.5, once: true }}
+						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7 order-3"
 					>
 						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
@@ -267,10 +268,11 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 					<motion.div
-						initial={{ x: 300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.5, once: true }}
+						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5 order-4"
 					>
 						<Card className="w-full h-[300px]">
@@ -292,8 +294,9 @@ export default function IndexPage() {
 					</motion.div>
 
 					<motion.div
-						initial={{ x: -300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7 order-5"
@@ -330,8 +333,9 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 					<motion.div
-						initial={{ x: 300, opacity: 0 }}
-						{...(isSmall ? {} : { whileInView: { x: 0, opacity: 1 } })}
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5 order-6"
