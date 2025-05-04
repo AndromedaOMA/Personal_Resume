@@ -18,8 +18,8 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            background: "#b0aca6",
-            foreground: "#11181C",
+            background: "#8d806d",
+            foreground: "#383128",
             primary: {
               foreground: "#FFFFFF",
               DEFAULT: "#006FEE",
@@ -28,8 +28,8 @@ module.exports = {
         },
         dark: {
           colors: {
-            background: "#000000",
-            foreground: "#b0aca6",
+            background: "#383128",
+            foreground: "#8d806d",
             primary: {
               foreground: "#FFFFFF",
               DEFAULT: "#006FEE",
