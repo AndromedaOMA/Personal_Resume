@@ -65,51 +65,51 @@ export default function IndexPage() {
 	return (
 		<DefaultLayout>
 			<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<Card isFooterBlurred radius="lg" className="border-none w-full max-w-[725px] mx-auto">
-			<div className="relative">
-				<Image
-				src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
-				alt="Cool Background Image"
-				className="z-0 w-full h-[220px] sm:h-[300px] scale-125 -translate-y-6 object-cover shadow-small"
-				/>
+				<Card isFooterBlurred radius="lg" className="border-none w-full max-w-[725px] mx-auto">
+					<div className="relative">
+						<Image
+							src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
+							alt="Cool Background Image"
+							className="z-0 w-full h-[220px] sm:h-[300px] scale-125 -translate-y-6 object-cover shadow-small"
+						/>
 
-				<div className="absolute inset-0 flex items-center px-4 sm:px-10 py-4 gap-4">
-				<div className="w-[70px] h-[100px] sm:w-[120px] sm:h-[180px] flex-shrink-0">
-					<Image
-					src="https://avatars.githubusercontent.com/u/116078879?v=4"
-					alt="Profile"
-					className="w-full h-full object-cover rounded-xl shadow-lg"
-					/>
-				</div>
+						<div className="absolute inset-0 flex items-center px-4 sm:px-10 py-4 gap-4">
+							<div className="w-[70px] h-[100px] sm:w-[120px] sm:h-[180px] flex-shrink-0">
+								<Image
+									src="https://avatars.githubusercontent.com/u/116078879?v=4"
+									alt="Profile"
+									className="w-full h-full object-cover rounded-xl shadow-lg"
+								/>
+							</div>
 
-				<div className="flex-1 text-black">
-					<h1 className="text-sm sm:text-2xl font-bold">
-					Hi 👋, I'm Olaru Marius-Alexandru
-					</h1>
-					<p className="mt-1 text-xs sm:text-md leading-tight">
-					A passionate software developer
-					<span className="hidden sm:inline">
-						{" "}
-						from Romania interested in Deep Learning & Machine Learning.
-					</span>
-					</p>
-				</div>
-				</div>
-			</div>
+							<div className="flex-1 text-black">
+								<h1 className="text-sm sm:text-2xl font-bold">
+									Hi 👋, I'm Olaru Marius-Alexandru
+								</h1>
+								<p className="mt-1 text-xs sm:text-md leading-tight">
+									A passionate software developer
+									<span className="hidden sm:inline">
+										{" "}
+										from Romania interested in Deep Learning & Machine Learning.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
 
-			<CardFooter className="justify-end before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-				<Button
-				className="text-tiny text-black/80 bg-black/20"
-				variant="flat"
-				color="default"
-				radius="lg"
-				size="sm"
-				onClick={handleNotifyMeClick}
-				>
-				Get In Touch
-				</Button>
-			</CardFooter>
-			</Card>
+					<CardFooter className="justify-end before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+						<Button
+							className="text-tiny text-black/80 bg-black/20"
+							variant="flat"
+							color="default"
+							radius="lg"
+							size="sm"
+							onClick={handleNotifyMeClick}
+						>
+							Get In Touch
+						</Button>
+					</CardFooter>
+				</Card>
 
 
 
@@ -154,7 +154,7 @@ export default function IndexPage() {
 						// animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7"
+						className="col-span-12 sm:col-span-7 order-1"
 					>
 						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -193,7 +193,7 @@ export default function IndexPage() {
 						// animate={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5"
+						className="col-span-12 sm:col-span-5 order-2"
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -216,7 +216,7 @@ export default function IndexPage() {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.5, once: true }}
-						className="col-span-12 sm:col-span-5"
+						className="col-span-12 sm:col-span-5 order-3"
 					>
 						<Card className="w-full h-[300px]">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -240,7 +240,7 @@ export default function IndexPage() {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.5, once: true }}
-						className="col-span-12 sm:col-span-7"
+						className="col-span-12 sm:col-span-7 order-4"
 					>
 						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -280,7 +280,7 @@ export default function IndexPage() {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7"
+						className="col-span-12 sm:col-span-7 order-5"
 					>
 						<Card className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -318,7 +318,7 @@ export default function IndexPage() {
 						whileInView={{ x: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: "easeOut" }}
 						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5"
+						className="col-span-12 sm:col-span-5 order-6"
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
@@ -383,21 +383,6 @@ export default function IndexPage() {
 						</AccordionItem>
 					</Accordion>
 				</div>
-
-				{/* <div className="flex w-full max-w-4xl text-center justify-center gap-5">
-					<h1 className={title()}>Want to be part of SoulSteps?&nbsp;</h1>
-				</div>
-				<div className="flex flex-col items-center justify-center">
-					<p className="text-center">
-						Join our community and answer a few questions about your needs <br />
-						to receive 1 year free subscription
-					</p>
-					<div className="w-full flex flex-col gap-4">
-						<div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
-							<Input type="email" variant="bordered" label="Email" id="email" />
-						</div>
-					</div>
-				</div> */}
 
 				<div> <p><br /><br /></p> </div>
 
