@@ -19,7 +19,7 @@ import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 
-import { Logo, LogoDesc } from "@/components/icons";
+import { Logo, LogoDesc, GithubIcon } from "@/components/icons";
 
 export const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -31,18 +31,26 @@ export const Navbar = () => {
 			behavior: 'smooth'
 		});
 	};
+	
+	const handleEducationClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault();
+		const target = document.querySelector("#education");
+		smoothScrollTo(target as HTMLElement);
+		setMenuOpen(false); 
+	};
 	const handleProjectsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const target = document.querySelector("#projects");
 		smoothScrollTo(target as HTMLElement);
 		setMenuOpen(false); 
 	};
-	const handleTeamClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+	const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const target = document.querySelector("#contact");
 		smoothScrollTo(target as HTMLElement);
 		setMenuOpen(false); 
 	};
+
 
 	return (
 		<NextUINavbar maxWidth="xl" position="sticky">
@@ -65,8 +73,15 @@ export const Navbar = () => {
 								)}
 								color="background"
 								href={item.href}
-								onClick={item.label === "Projects" ? handleProjectsClick : handleTeamClick}
-							>
+								onClick={
+									item.label === "Education"
+										? handleEducationClick
+										: item.label === "Projects"
+										? handleProjectsClick
+										: item.label === "Contact"
+										? handleContactClick
+										: undefined
+								}							>
 								{item.label}
 							</NextLink>
 						</NavbarItem>
@@ -81,8 +96,8 @@ export const Navbar = () => {
 					</Link>
 					<Link isExternal href={siteConfig.links.discord}>
 						<DiscordIcon className="text-default-500" />
-					</Link>
-					<Link isExternal href={siteConfig.links.github}>
+					</Link> */}
+					{/* <Link isExternal href={siteConfig.links.github}>
 						<GithubIcon className="text-default-500" />
 					</Link> */}
 					<ThemeSwitch />
@@ -109,7 +124,7 @@ export const Navbar = () => {
 								// }
 								color="foreground"
 								size="lg"
-								onClick={item.label === "Projects" ? handleProjectsClick : handleTeamClick}
+								onClick={item.label === "Projects" ? handleProjectsClick : handleContactClick}
 
 							>
 								{item.label}

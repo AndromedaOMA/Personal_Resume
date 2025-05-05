@@ -128,39 +128,33 @@ export default function IndexPage() {
 					</CardFooter>
 				</Card>
 
+				<div id="education"> <p><br /><br /></p> </div>
 
+				<div className="inline-block max-w-4xl text-center justify-center gap-5">
+					<h1 className={title()}>Education&nbsp;</h1>
+				</div>
+				<div>
+					<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
+					<p className="text-lg mb-1">Bachelor’s Degree in Computer Science</p>
+					<p className="text-sm mb-6">October 2022 – July 2025</p>
 
-
-				{/* <Card
-					isFooterBlurred
-					radius="lg"
-					className="border-none"
-				>
-					<Image
-						src="https://eleven-clinic.com/wp-content/uploads/2022/11/despre-noi.jpg"
-						alt="Cool Background Image"
-						style={{ width: '725px', height: '300px' }}
-						className="z-0 w-full h-full scale-125 -translate-y-6 object-cover shadow-small"
-					/>
-					<CardFooter className="justify-between before:bg-white/40 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-						<p className="text-tiny text-black/80">Available soon.</p>
-						<Button
-							className="text-tiny text-black/80 bg-black/20"
-							variant="flat"
-							color="default"
-							radius="lg"
-							size="sm"
-							onClick={handleNotifyMeClick}
-						>
-							Notify me
-						</Button>
-					</CardFooter>
-				</Card> */}
+					<h4 className="text-lg font-medium mb-2">Relevant Coursework</h4>
+					<ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-600 text-base">
+						<li>Neural Networks (DNN)</li>
+						<li>Machine Learning (ML)</li>
+						<li>Artificial Intelligence (AI)</li>
+						<li>PyTorch, NumPy, Python</li>
+						<li>Data Structures and Algorithm Design</li>
+						<li>Object-Oriented Programming (OOP)</li>
+						<li>Databases</li>
+						<li>Probabilities and Statistics</li>
+					</ul>
+				</div>
 
 
 				<div id="projects"> <p><br /><br /></p> </div>
 
-				<div className="inline-block max-w-4xl text-center justify-center gap-5" id="projects">
+				<div className="inline-block max-w-4xl text-center justify-center gap-5">
 					<h1 className={title()}>My personal projects&nbsp;</h1>
 				</div>
 				<div className="max-w-[900px] gap-4 grid grid-cols-1 sm:grid-cols-12 px-4 sm:px-8">
@@ -213,7 +207,7 @@ export default function IndexPage() {
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<p className="text-2xl text-black/40 font-bold">Description</p>
 								<h4 className="text-black/80 font-medium text-md">
 									Implemented a Deep Q-Learning algorithm with Convolutional Neural Networks to train an AI agent to play Flappy Bird. Built using PyTorch, demonstrating advanced reinforcement learning techniques.
 								</h4>
@@ -277,7 +271,7 @@ export default function IndexPage() {
 					>
 						<Card className="w-full h-[300px]">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-large text-black/40 uppercase font-bold">description</p>
+								<p className="text-2xl text-black/40 font-bold">Description</p>
 								<h4 className="text-black/80 font-medium text-md">
 									Developed better the subtle concepts of Data Science using PySpark!
 									Course supported by E.on Software Development that established the foundations of working with Big Data.
@@ -287,7 +281,7 @@ export default function IndexPage() {
 							<Image
 								removeWrapper
 								alt="Card example background"
-								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
 								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
 							/>
 						</Card>
@@ -342,8 +336,8 @@ export default function IndexPage() {
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-large text-black/40 uppercase font-bold">description</p>
-								<h4 className="text-white/90 font-medium text-md">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
 									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers.								</h4>
 							</CardHeader>
 							<Image

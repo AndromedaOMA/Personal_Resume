@@ -5,6 +5,10 @@ export const siteConfig = {
 	description: "",
 	navItems: [
 		{
+			label: "Education",
+			href: "#education",
+		},
+		{
 			label: "Projects",
 			href: "#projects",
 		},
@@ -15,6 +19,10 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
+			label: "Education",
+			href: "#education",
+		},
+		{
 			label: "Projects",
 			href: "#projects",
 		},
@@ -24,9 +32,7 @@ export const siteConfig = {
 		},
 	],
 	links: {
-		github: "/",
-		twitter: "/",
-		docs: "/",
-		discord: "/",
+		github: "https://github.com/AndromedaOMA",
+		// linkedin: "https://www.linkedin.com/in/marius-alexandru-olaru-390599229/"
 	},
 };
