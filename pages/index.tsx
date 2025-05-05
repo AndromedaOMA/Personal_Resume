@@ -388,7 +388,7 @@ export default function IndexPage() {
 					))}
 				</div>
 
-				<div  id="volunteering"> <p><br /><br /></p> </div>
+				<div id="volunteering"> <p><br /><br /></p> </div>
 
 				<section className="w-full px-4 py-12 flex flex-col items-center justify-center">
 					<div className="max-w-4xl text-center">
@@ -407,8 +407,9 @@ export default function IndexPage() {
 
 							<ul className="mt-6 list-disc pl-6 text-left text-base space-y-3">
 								<li>
-									Led the organization of the national  <strong>FIICode</strong> competition, showing a spirit for coordination, rigor, and planning.
+									Led the organization of the national <a href="https://fiicode.asii.ro/en" target="_blank" className="underline font-bold hover:opacity-40 transition">FIICode</a> competition, showing a spirit for coordination, rigor, and planning.
 								</li>
+
 								<li>
 									Expanded event to international audiences (+25%), secured <strong>BitDefender</strong> as an exclusive sponsor
 									for the Capture The Flag area. Partnered with companies like <em>Amazon</em>, <em>HEITS Digital</em>,
