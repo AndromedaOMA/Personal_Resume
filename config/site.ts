@@ -13,6 +13,10 @@ export const siteConfig = {
 			href: "#projects",
 		},
 		{
+			label: "Volunteering",
+			href: "#volunteering",
+		},
+		{
 			label: "Contact",
 			href: "#contact",
 		},
@@ -25,6 +29,10 @@ export const siteConfig = {
 		{
 			label: "Projects",
 			href: "#projects",
+		},
+		{
+			label: "Volunteering",
+			href: "#volunteering",
 		},
 		{
 			label: "Contact",

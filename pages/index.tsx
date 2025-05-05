@@ -90,7 +90,6 @@ export default function IndexPage() {
 						/>
 
 						<div className="absolute inset-0 flex items-center px-4 sm:px-10 py-4 gap-4">
-							{/* Increased the image size here */}
 							<div className="w-[100px] h-[140px] sm:w-[160px] sm:h-[220px] flex-shrink-0">
 								<Image
 									src="https://avatars.githubusercontent.com/u/116078879?v=4"
@@ -130,26 +129,33 @@ export default function IndexPage() {
 
 				<div id="education"> <p><br /><br /></p> </div>
 
-				<div className="inline-block max-w-4xl text-center justify-center gap-5">
-					<h1 className={title()}>Education&nbsp;</h1>
-				</div>
-				<div>
-					<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
-					<p className="text-lg mb-1">Bachelor’s Degree in Computer Science</p>
-					<p className="text-sm mb-6">October 2022 – July 2025</p>
+				<section className="w-full px-4 py-12 flex flex-col items-center justify-center">
+					<div className="max-w-4xl text-center">
 
-					<h4 className="text-lg font-medium mb-2">Relevant Coursework</h4>
-					<ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-600 text-base">
-						<li>Neural Networks (DNN)</li>
-						<li>Machine Learning (ML)</li>
-						<li>Artificial Intelligence (AI)</li>
-						<li>PyTorch, NumPy, Python</li>
-						<li>Data Structures and Algorithm Design</li>
-						<li>Object-Oriented Programming (OOP)</li>
-						<li>Databases</li>
-						<li>Probabilities and Statistics</li>
-					</ul>
-				</div>
+						<div className="inline-block max-w-4xl text-center justify-center gap-5">
+							<h1 className={title()}>Education&nbsp;</h1>
+						</div>
+						<div>
+							<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
+							<p className="text-lg mb-1">Bachelor’s Degree in Computer Science</p>
+							<p className="text-sm mb-6">October 2022 – July 2025</p>
+
+							<h4 className="text-lg font-medium mb-2">Relevant Coursework</h4>
+							<ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-base">
+								<li>Neural Networks (DNN)</li>
+								<li>Machine Learning (ML)</li>
+								<li>Artificial Intelligence (AI)</li>
+								<li>PyTorch, NumPy, Python</li>
+								<li>Data Structures and Algorithm Design</li>
+								<li>Object-Oriented Programming (OOP)</li>
+								<li>Databases</li>
+								<li>Probabilities and Statistics</li>
+							</ul>
+						</div>
+
+					</div>
+				</section>
+
 
 
 				<div id="projects"> <p><br /><br /></p> </div>
@@ -338,7 +344,7 @@ export default function IndexPage() {
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
 								<h4 className="text-black/80 font-medium text-md">
-									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers.								</h4>
+									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers. </h4>
 							</CardHeader>
 							<Image
 								removeWrapper
@@ -376,11 +382,55 @@ export default function IndexPage() {
 							</CardBody>
 							<CardFooter className="text-small justify-between">
 								<b>{skill.title}</b>
-								<p className="text-default-500">{skill.type}</p>
+								<p className="text-default-250">{skill.type}</p>
 							</CardFooter>
 						</Card>
 					))}
 				</div>
+
+				<div  id="volunteering"> <p><br /><br /></p> </div>
+
+				<section className="w-full px-4 py-12 flex flex-col items-center justify-center">
+					<div className="max-w-4xl text-center">
+						<h1 className={`${title()} mb-8`}>Volunteering</h1>
+
+						<div className="space-y-4 ">
+							<h3 className="text-2xl font-bold">
+								Association of Computer Science Students (ASII)
+								<span className="block text-base font-medium  mt-1">IT Department Member</span>
+							</h3>
+
+							<div className="text-sm">
+								<p>August 2022 – January 2025</p>
+								<p>Iași, România</p>
+							</div>
+
+							<ul className="mt-6 list-disc pl-6 text-left text-base space-y-3">
+								<li>
+									Led the organization of the national  <strong>FIICode</strong> competition, showing a spirit for coordination, rigor, and planning.
+								</li>
+								<li>
+									Expanded event to international audiences (+25%), secured <strong>BitDefender</strong> as an exclusive sponsor
+									for the Capture The Flag area. Partnered with companies like <em>Amazon</em>, <em>HEITS Digital</em>,
+									<em> XWiki</em>, <em>Bytex</em>, and <em>Profidata</em>.
+								</li>
+								<li>
+									Contributed to the FIICode website using <strong>React</strong>. Gained hands-on experience with <strong>Git</strong> and <strong>GitHub</strong>.
+								</li>
+								<li>
+									Selected among 15 students (from 200+) by <strong>GETA</strong>, a selective training division within ASII.
+								</li>
+								<li>
+									Delivered training sessions on <strong>Git</strong>, <strong>GitHub</strong>, <strong>React</strong>, and <strong>public speaking</strong>.
+									Represented FIICode through high school presentations.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+
 
 				<div> <p><br /><br /></p> </div>
 
