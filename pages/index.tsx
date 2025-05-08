@@ -38,7 +38,7 @@ export default function IndexPage() {
 	const skills = [
 		{
 			title: "PyTorch",
-			img: "https://pytorch.org/assets/images/logo-icon.svg",
+			img: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg",
 			type: "Library",
 		},
 		{
