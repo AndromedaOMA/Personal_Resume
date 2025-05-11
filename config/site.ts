@@ -13,6 +13,10 @@ export const siteConfig = {
 			href: "#projects",
 		},
 		{
+			label: "Awards",
+			href: "#awards",
+		},
+		{
 			label: "Volunteering",
 			href: "#volunteering",
 		},
@@ -29,6 +33,10 @@ export const siteConfig = {
 		{
 			label: "Projects",
 			href: "#projects",
+		},
+		{
+			label: "Awards",
+			href: "#awards",
 		},
 		{
 			label: "Volunteering",

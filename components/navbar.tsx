@@ -44,6 +44,12 @@ export const Navbar = () => {
 		smoothScrollTo(target as HTMLElement);
 		setMenuOpen(false); 
 	};
+	const handleAwardsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		e.preventDefault();
+		const target = document.querySelector("#awards");
+		smoothScrollTo(target as HTMLElement);
+		setMenuOpen(false); 
+	};
 	const handleVolunteeringClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		const target = document.querySelector("#volunteering");
@@ -86,8 +92,10 @@ export const Navbar = () => {
 										? handleProjectsClick
 										: item.label === "Contact"
 										? handleContactClick
-										: handleVolunteeringClick
-								}							>
+										: item.label === "Volunteering"
+										? handleVolunteeringClick
+										: handleAwardsClick
+								}>
 								{item.label}
 							</NextLink>
 						</NavbarItem>

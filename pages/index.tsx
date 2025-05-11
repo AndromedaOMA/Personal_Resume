@@ -1,6 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import { title, subtitle } from "@/components/primitives";
-import { Image, Card, CardFooter, CardBody, Button, CardHeader, Input, Accordion, AccordionItem } from "@nextui-org/react";
+import {
+	Image, Card, CardFooter, CardBody, Button, CardHeader, Accordion, AccordionItem,
+	Dropdown, DropdownTrigger, DropdownMenu, DropdownItem,
+	ScrollShadow
+} from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -17,6 +21,72 @@ function useIsSmallScreen() {
 
 	return isSmall;
 }
+
+// RoboChallengeContent
+export const RoboChallengeContent = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			Robochallenge is an international robotics competition aimed especially at students who are passionate about the practice of a project, as well as those who are eager to learn more. The competition complements the theoretical part taught at the faculty, it is the way in which students can do something enjoyable and useful using the theoretical knowledge acquired. Robochallenge is a competition organized by the Faculty of Electronics, Telecommunications and Information Technology, "Politehnica" University of Bucharest, in collaboration with the Electronics Students' League (Electronics Students' League) and the ETTI Robochallenge team.
+		</p>
+		<br />
+		<p>
+			SpeedyBot 2.0 is a Mini Sumo fighting robot made of a steel chassis and front blade, five infra-red sensors (JS40F) oriented on a 180-degree front surface for detecting and attacking the opponent, two front color sensors (ML1) for timely detection of the edge of the playing surface, two 400 Rpm Micro Gearhead Dc Motors attached to one wheel each, a LiPo Battery (7.4V 2S 300Mah), all of these components being connected to the Arduino Leonardo motherboard.
+		</p>
+		<br />
+		<p>
+			<strong>FUN FACT:</strong> Immediately after winning the final, I was informed that in the last three years, 2016-2018, at the Mini-Sumo Kids competition at Robochallenge Romania, no Romanian had ranked first, second or third. I also noticed that besides me, Turkish teams had ranked second and third. It wasn’t long before I realized that most of the kits available on the market were designed by the Turks. Having their own siege of sumo robots, they had a slight advantage over everyone else.
+		</p>
+	</div>
+);
+
+// FTCContent
+export const FTCContent = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			FIRST Tech Challenge (FTC), formerly known as FIRST Vex Challenge, is a robotics competition for students in grades 7-12 to compete head-to-head by designing, building, and programming a robot to compete in an alliance format against other teams. FIRST Tech Challenge is one of four major robotics programs organized by FIRST, the other three programs including FIRST Lego League Explore, FIRST Lego League Challenge, and FIRST Robotics Competition.		</p>
+		<br />
+		<p>
+			The robot kit is Android-based and programmed using Java, the Blocks programming interface, or other Android programming systems. Teams, with the guidance of coaches, mentors, and volunteers, must develop a strategy and build robots based on innovative and sound engineering principles. Awards are given for robot performance, as well as community development, design, and other real-world achievements.
+		</p>
+		<br />
+		<p>
+			In the 2016-2017 school year, I was a member of the AQUILA Team (RO 040) from the “Petru Rareș” National College, which was the first team from Neamț County to participate in this prestigious competition. In the following years, several high schools in the county established teams that participated in the FTC competition. Later, after becoming a student at the National College of Informatics in Piatra Neamț, I joined the CYB3RG0DS team (RO 085) where I participated in all the activities of the FTC competition.
+		</p>
+	</div>
+);
+
+// InfoMatrix1Content
+export const InfoMatrix1Content = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			Infomatrix is ​​an international computer science project competition, born from the desire to bring together the best IT students in the world. The competition is not only about promoting professional excellence; it also serves to promote dialogue and intercultural cooperation, by involving students and teachers from all over the world. People have a certain interest in robotics and it is growing considerably. In order to make the new generation more curious and passionate about robotics, several competitions have been organized in different countries around the world. Infomatrix invites the best minds from all over the world to compete in the Robotics category. Infomatrix has 7 subcategories for Robotics. Two of them are called Lego Mini-Sumo and Mini-Sumo.
+		</p>
+		<br />
+		<p>
+			SpeedyBot 1.0 is a Mini Sumo fighting robot made of a steel chassis and front blade, five infra-red sensors (JS40F) oriented on a 180-degree front surface for detecting and attacking the opponent, two front color sensors (ML1) for timely detection of the edge of the playing surface, two 400 Rpm Micro Gearhead Dc Motors attached to one wheel each, a LiPo Battery (7.4V 2S 300Mah), all of these components being connected to the Arduino Leonardo motherboard.
+		</p>
+		<br />
+		<p>
+			The Lego Mini-Sumo competition consists of two autonomous robots competing and trying to push their opponent out of the field. The playing field is round, and the inner surface is painted black and is bordered by a white border. Two robots compete in each battle. A battle consists of three rounds.		</p>
+	</div>
+);
+
+
+// InfoMatrix2Content
+export const InfoMatrix2Content = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			Infomatrix is ​​an international computer science project competition, born from the desire to bring together the best IT students in the world. The competition is not only about promoting professional excellence; it also serves to promote dialogue and intercultural cooperation, by involving students and teachers from all over the world. People have a certain interest in robotics and it is growing considerably. In order to make the new generation more curious and passionate about robotics, several competitions have been organized in different countries around the world. Infomatrix invites the best minds from all over the world to compete in the Robotics category. Infomatrix has 7 subcategories for Robotics. Two of them are called Lego Mini-Sumo and Mini-Sumo.
+		</p>
+		<br />
+		<p>
+			SpeedyBot 1.0 is a Mini Sumo fighting robot made of a steel chassis and front blade, five infra-red sensors (JS40F) oriented on a 180-degree front surface for detecting and attacking the opponent, two front color sensors (ML1) for timely detection of the edge of the playing surface, two 400 Rpm Micro Gearhead Dc Motors attached to one wheel each, a LiPo Battery (7.4V 2S 300Mah), all of these components being connected to the Arduino Leonardo motherboard.
+		</p>
+		<br />
+		<p>
+			The Lego Mini-Sumo competition consists of two autonomous robots competing and trying to push their opponent out of the field. The playing field is round, and the inner surface is painted black and is bordered by a white border. Two robots compete in each battle. A battle consists of three rounds.		</p>
+	</div>
+);
 
 export default function IndexPage() {
 	const smoothScrollTo = (target: HTMLElement) => {
@@ -77,6 +147,7 @@ export default function IndexPage() {
 			type: "Relational Db",
 		},
 	];
+
 
 	return (
 		<DefaultLayout>
@@ -221,7 +292,7 @@ export default function IndexPage() {
 							<Image
 								removeWrapper
 								alt="Card background"
-								className="z-0 w-full h-full object-cover"
+								className="z-0 w-full h-full object-cover blur-sm"
 								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
 							/>
 						</Card>
@@ -349,7 +420,7 @@ export default function IndexPage() {
 							<Image
 								removeWrapper
 								alt="Card background"
-								className="z-0 w-full h-full object-cover"
+								className="z-0 w-full h-full object-cover blur-sm"
 								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8vadhsOuk1F5mucqxzFknGjNWBqB3hm76J2wh0gVTLZrRn3lS"
 							/>
 						</Card>
@@ -386,6 +457,223 @@ export default function IndexPage() {
 							</CardFooter>
 						</Card>
 					))}
+				</div>
+
+
+
+				<div id="awards"> <p><br /><br /></p> </div>
+
+				<div className="inline-block max-w-4xl text-center justify-center gap-5">
+					<h1 className={title()}>Awards&nbsp;</h1>
+				</div>
+				<div className="max-w-[900px] gap-4 grid grid-cols-1 sm:grid-cols-12 px-4 sm:px-8">
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">First place at the International RoboChallenge Competition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Category:</strong> Mini Sumo Kids</li>
+									<li><strong>Time Period:</strong> 03 nov. 2019</li>
+									<li>
+										<strong>Tech Stack:</strong> Embedded System · Arduino · C/C++ · Robotics
+									</li>
+								</ul>
+								<Dropdown backdrop="blur">
+									<DropdownTrigger>
+										<Button variant="bordered">View on Newspapers</Button>
+									</DropdownTrigger>
+									<DropdownMenu aria-label="Static Actions" variant="faded">
+										<DropdownItem
+											key="Monitorul"
+											href="https://monitorulneamt.ro/cu-un-robot-de-lupta-locul-i-la-internationala-robochallenge/"
+										>
+											Monitorul Newspapers
+										</DropdownItem>
+										<DropdownItem key="Adevărul" href="https://adevarul.ro/stiri-locale/piatra-neamt/robotii-de-lupta-pasiunea-unui-licean-de-a-x-a-1998360.html"
+										>
+											Adevărul Newspapers
+										</DropdownItem>
+										<DropdownItem key="NewsAllert" href="https://www.newsallert.ro/nemteanul-marius-alexandru-olaru-locul-1-la-competitia-internationala-de-robotica-robochallenge/"
+										>
+											NewsAllert Newspapers
+										</DropdownItem>
+									</DropdownMenu>
+								</Dropdown>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+									<RoboChallengeContent />
+								</ScrollShadow>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+							/>
+						</Card>
+					</motion.div>
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">Silver Medal at the Infomatrix International Competition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Category:</strong> MiniSumo</li>
+									<li><strong>Time Period:</strong> 24 apr. 2019</li>
+									<li>
+										<strong>Tech Stack:</strong> Embedded System · Arduino · C/C++ · Robotics
+									</li>
+								</ul>
+								<Dropdown backdrop="blur">
+									<DropdownTrigger>
+										<Button variant="bordered">View on Newspapers</Button>
+									</DropdownTrigger>
+									<DropdownMenu aria-label="Static Actions" variant="faded">
+										<DropdownItem
+											key="Mentorul"
+											href="https://monitorulneamt.ro/medalie-de-argint-la-o-competitie-internationala-pentru-un-elev-de-la-colegiul-de-informatica/"
+										>
+											Mentorul Newspapers
+										</DropdownItem>
+									</DropdownMenu>
+								</Dropdown>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Advanced Analytics background"
+									className="w-full h-full object-cover"
+									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg ">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+									<InfoMatrix2Content />
+								</ScrollShadow>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card example background"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
+								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
+						</Card>
+					</motion.div>
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">The ﬁnalist alliance in the FIRST Tech Challenge International Competition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> 20 apr. 2019</li>
+									<li>
+										<strong>Tech Stack:</strong> Embedded System · Android · Robotics
+									</li>
+								</ul>
+								<Dropdown backdrop="blur">
+									<DropdownTrigger>
+										<Button variant="bordered">View on Newspapers</Button>
+									</DropdownTrigger>
+									<DropdownMenu aria-label="Static Actions" variant="faded">
+										<DropdownItem
+											key="ZiarPiatraNeamț"
+											href="https://www.ziarpiatraneamt.ro/echipa-aquila-de-la-colegiul-national-petru-rares-va-participa-la-competitia-nationala-de-robotica-first-tech-challenge"
+										>
+											ZiarPiatraNeamț Newspapers
+										</DropdownItem>
+									</DropdownMenu>
+								</Dropdown>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8NqqKaFpPuE5tuLVMiMtQ0IIJ5sTW5lX_RcDRxd7624DJ7a2w"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+									<FTCContent />
+								</ScrollShadow>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8vadhsOuk1F5mucqxzFknGjNWBqB3hm76J2wh0gVTLZrRn3lS"
+							/>
+						</Card>
+					</motion.div>
 				</div>
 
 				<div id="volunteering"> <p><br /><br /></p> </div>
