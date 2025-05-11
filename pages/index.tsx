@@ -84,9 +84,26 @@ export const InfoMatrix2Content = () => (
 		</p>
 		<br />
 		<p>
+			The Mini-Sumo competition consists of two autonomous robots competing and trying to push their opponent out of the field. The playing field is round, and the inner surface is painted black and is bordered by a white border. Two robots compete in each battle. A battle consists of three rounds.		</p>
+	</div>
+);
+
+// InfoMatrix3Content
+export const InfoMatrix3Content = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			InfoMatrix promotes multiculturalism and understanding between people, this is one of the main goals of this beautiful international competition. Young people from Europe, Asia, America, Africa, we all met here to compete and learn more from each other!
+		</p>
+		<br />
+		<p>
+			The Hola robot is a LEGO combat robot built and programmed in the C/C++ programming language. It is equipped with Mindstorms EV3 equipment, consisting of two infrared sensors for detecting and attacking the enemy placed in front of it, two color sensors to detect the edge of the combat surface in advance, two speed motors each equipped with a wheel, an attack motor that helps Hola push opponents more easily through a propeller and the motherboard that manages each component.
+		</p>
+		<br />
+		<p>
 			The Lego Mini-Sumo competition consists of two autonomous robots competing and trying to push their opponent out of the field. The playing field is round, and the inner surface is painted black and is bordered by a white border. Two robots compete in each battle. A battle consists of three rounds.		</p>
 	</div>
 );
+
 
 export default function IndexPage() {
 	const smoothScrollTo = (target: HTMLElement) => {
@@ -511,7 +528,7 @@ export default function IndexPage() {
 								<Image
 									removeWrapper
 									alt="Flappy Bird AI background"
-									className="w-full h-full object-cover"
+									className="w-full h-full object-cover blur-sm"
 									src="https://eleven-clinic.com/wp-content/uploads/2022/11/cine-suntem.jpg"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -578,7 +595,7 @@ export default function IndexPage() {
 								<Image
 									removeWrapper
 									alt="Advanced Analytics background"
-									className="w-full h-full object-cover"
+									className="w-full h-full object-cover blur-sm"
 									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -609,6 +626,73 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 
+<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">Bronze Medal at the Infomatrix International Competition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Category:</strong> LEGO Mini Sumo</li>
+									<li><strong>Time Period:</strong> 01 may 2018</li>
+									<li>
+										<strong>Tech Stack:</strong> Embedded System · C/C++ · Robotics
+									</li>
+								</ul>
+								<Dropdown backdrop="blur">
+									<DropdownTrigger>
+										<Button variant="bordered">View on Newspapers</Button>
+									</DropdownTrigger>
+									<DropdownMenu aria-label="Static Actions" variant="faded">
+										<DropdownItem
+											key="Monitorul"
+											href="https://monitorulneamt.ro/elev-pietrean-medalie-de-argint-la-competitia-infomatrix-world-final-2018/"
+										>
+											Monitorul Newspapers
+										</DropdownItem>
+									</DropdownMenu>
+								</Dropdown>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover blur-sm"
+									src="https://i.pinimg.com/736x/d8/e4/6e/d8e46e3a67d87e4942ed788e8328e7a8.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+									<InfoMatrix3Content />
+								</ScrollShadow>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
+							/>
+						</Card>
+					</motion.div>
+
 					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
@@ -621,7 +705,7 @@ export default function IndexPage() {
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">The ﬁnalist alliance in the FIRST Tech Challenge International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Time Period:</strong> 20 apr. 2019</li>
+									<li><strong>Time Period:</strong> 20 apr. 2017</li>
 									<li>
 										<strong>Tech Stack:</strong> Embedded System · Android · Robotics
 									</li>
@@ -644,7 +728,7 @@ export default function IndexPage() {
 								<Image
 									removeWrapper
 									alt="Flappy Bird AI background"
-									className="w-full h-full object-cover"
+									className="w-full h-full object-cover blur-sm"
 									src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8NqqKaFpPuE5tuLVMiMtQ0IIJ5sTW5lX_RcDRxd7624DJ7a2w"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
