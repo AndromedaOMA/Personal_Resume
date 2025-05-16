@@ -326,16 +326,16 @@ export default function IndexPage() {
 						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">
-									Advanced Analytics with Apache Spark</p>
+									Speech Recognition</p>
 								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Time Period:</strong> mar. 2025 - apr. 2025</li>
+									<li><strong>Time Period:</strong> may 2025 - apy 2025</li>
 									<li>
-										<strong>Tech Stack:</strong>  PySpark · Apache Spark · Data Science · Big Data · Problem Solving · Apache Spark ML · MLLib
+										<strong>Tech Stack:</strong>   Deep Neural Networks (DNN) · PyTorch · Convolutional Neural Networks (CNN) · Residual Networks (ResNet) · Object-Oriented Programming (OOP) · Deep Learning
 									</li>
 								</ul>
 								<Button
 									as="a"
-									href="https://github.com/AndromedaOMA/Advanced_Analytics_with_Apache_Spark---E.On_Software_Development"
+									href="https://github.com/AndromedaOMA/Speech_Recognition/tree/main"
 									target="_blank"
 									variant="shadow"
 									color="default"
@@ -347,9 +347,9 @@ export default function IndexPage() {
 							<div className="absolute inset-0 z-0">
 								<Image
 									removeWrapper
-									alt="Advanced Analytics background"
+									alt="Flappy Bird AI background"
 									className="w-full h-full object-cover"
-									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+									src="https://i.pinimg.com/736x/d8/e4/6e/d8e46e3a67d87e4942ed788e8328e7a8.jpg"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 							</div>
@@ -367,16 +367,14 @@ export default function IndexPage() {
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
 								<h4 className="text-black/80 font-medium text-md">
-									Developed better the subtle concepts of Data Science using PySpark!
-									Course supported by E.on Software Development that established the foundations of working with Big Data.
-									This project aims to analyze the energy consumption of a group of fictitious consumers, over the course of a year, of an energy company, using the analysis techniques of the Apache Spark engine.
+									Developed and trained a Convolutional ResNet & Bidirectional GRU for Speech Recognition task! The main objective of this project is to recognize speech and provide transcripts associated with speech in real time. The architecture is compact but efficient, leveraging a well-structured dataset provided by the TorchAudio library.
 								</h4>
 							</CardHeader>
 							<Image
 								removeWrapper
-								alt="Card example background"
-								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
-								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
 							/>
 						</Card>
 					</motion.div>
@@ -442,6 +440,73 @@ export default function IndexPage() {
 							/>
 						</Card>
 					</motion.div>
+
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">
+									Advanced Analytics with Apache Spark</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> mar. 2025 - apr. 2025</li>
+									<li>
+										<strong>Tech Stack:</strong>  PySpark · Apache Spark · Data Science · Big Data · Problem Solving · Apache Spark ML · MLLib
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Advanced_Analytics_with_Apache_Spark---E.On_Software_Development"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Advanced Analytics background"
+									className="w-full h-full object-cover"
+									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Developed better the subtle concepts of Data Science using PySpark!
+									Course supported by E.on Software Development that established the foundations of working with Big Data.
+									This project aims to analyze the energy consumption of a group of fictitious consumers, over the course of a year, of an energy company, using the analysis techniques of the Apache Spark engine.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card example background"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
+								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
+						</Card>
+					</motion.div>
 				</div>
 
 				<div> <p><br /><br /></p> </div>
@@ -494,7 +559,7 @@ export default function IndexPage() {
 					>
 						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-2xl text-black/40 font-bold mb-2">First place at the International RoboChallenge Competition</p>
+								<p className="text-2xl text-black/40 font-bold mb-2">First place at the International <a href="https://robochallenge.ro/">RoboChallenge</a> Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
 									<li><strong>Category:</strong> Mini Sumo Kids</li>
 									<li><strong>Time Period:</strong> 03 nov. 2019</li>
@@ -626,7 +691,7 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 
-<motion.div
+					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
 						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
