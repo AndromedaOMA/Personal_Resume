@@ -315,133 +315,8 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 
-					<motion.div
-						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
-						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
-						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7"
-					>
-						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
-							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-2xl text-black/40 font-bold mb-2">
-									Speech Recognition</p>
-								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Time Period:</strong> may 2025 - apy 2025</li>
-									<li>
-										<strong>Tech Stack:</strong>   Deep Neural Networks (DNN) · PyTorch · Convolutional Neural Networks (CNN) · Residual Networks (ResNet) · Object-Oriented Programming (OOP) · Deep Learning
-									</li>
-								</ul>
-								<Button
-									as="a"
-									href="https://github.com/AndromedaOMA/Speech_Recognition/tree/main"
-									target="_blank"
-									variant="shadow"
-									color="default"
-									className="w-fit mt-auto"
-								>
-									View on GitHub
-								</Button>
-							</CardHeader>
-							<div className="absolute inset-0 z-0">
-								<Image
-									removeWrapper
-									alt="Flappy Bird AI background"
-									className="w-full h-full object-cover"
-									src="https://i.pinimg.com/736x/d8/e4/6e/d8e46e3a67d87e4942ed788e8328e7a8.jpg"
-								/>
-								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-							</div>
-						</Card>
-					</motion.div>
-					<motion.div
-						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
-						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
-						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5"
-					>
-						<Card className="w-full h-[300px]">
-							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<h4 className="text-black/80 font-medium text-md">
-									Developed and trained a Convolutional ResNet & Bidirectional GRU for Speech Recognition task! The main objective of this project is to recognize speech and provide transcripts associated with speech in real time. The architecture is compact but efficient, leveraging a well-structured dataset provided by the TorchAudio library.
-								</h4>
-							</CardHeader>
-							<Image
-								removeWrapper
-								alt="Card background"
-								className="z-0 w-full h-full object-cover blur-sm"
-								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
-							/>
-						</Card>
-					</motion.div>
 
-					<motion.div
-						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
-						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
-						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-7"
-					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-2xl text-black/40 font-bold mb-2">Neural Networks Laboratories</p>
-								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Time Period:</strong> sept. 2024 - ian. 2025</li>
-									<li>
-										<strong>Tech Stack:</strong> Deep Neural Networks (DNN) · PyTorch · NumPy · Reinforcement Learning · Convolutional Neural Networks (CNN) · Deep Learning · ResNet · Object-Oriented Programming (OOP) · Git · Python (Programming Language) · Pycharm · GitHub
-									</li>
-								</ul>
-								<Button
-									as="a"
-									href="https://github.com/AndromedaOMA/Neural_Networks---Laboratories"
-									target="_blank"
-									variant="shadow"
-									color="default"
-									className="w-fit mt-auto"
-								>
-									View on GitHub
-								</Button>
-							</CardHeader>
-							<div className="absolute inset-0 z-0">
-								<Image
-									removeWrapper
-									alt="Flappy Bird AI background"
-									className="w-full h-full object-cover"
-									src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8NqqKaFpPuE5tuLVMiMtQ0IIJ5sTW5lX_RcDRxd7624DJ7a2w"
-								/>
-								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-							</div>
-						</Card>
-					</motion.div>
-					<motion.div
-						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
-						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
-						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
-						transition={{ duration: 0.8, ease: "easeOut" }}
-						viewport={{ amount: 0.2, once: true }}
-						className="col-span-12 sm:col-span-5"
-					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
-							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
-								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<h4 className="text-black/80 font-medium text-md">
-									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers. </h4>
-							</CardHeader>
-							<Image
-								removeWrapper
-								alt="Card background"
-								className="z-0 w-full h-full object-cover blur-sm"
-								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8vadhsOuk1F5mucqxzFknGjNWBqB3hm76J2wh0gVTLZrRn3lS"
-							/>
-						</Card>
-					</motion.div>
-
-
+					
 					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
@@ -504,6 +379,266 @@ export default function IndexPage() {
 								alt="Card example background"
 								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
 								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
+						</Card>
+					</motion.div>
+
+{/* 
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">
+									Sound Recognition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> may 2025 - jun. 2025</li>
+									<li>
+										<strong>Tech Stack:</strong> Deep Neural Networks (DNN) · PyTorch · Convolutional Neural Networks (CNN) · Object-Oriented Programming (OOP) · Deep Learning · Mel Spectrogram · Audio Processing
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Sound_Recognition"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXF25qnT5qIKtKoQcp5GQ-uu8xWBucpmfaPusInLgfoh61Bi0I"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Developed and trained a Convolutional for Sound Recognition task! The main objective of this project is to recognize sounds and provide the classification associated with speech in real time. The architecture is compact but efficient, leveraging a well-structured <strong>UrbanSound8K</strong> dataset provided by the TorchAudio library.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
+							/>
+						</Card>
+					</motion.div>
+ */}
+
+					{/* <motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">
+									Speech Recognition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> may 2025 - may 2025</li>
+									<li>
+										<strong>Tech Stack:</strong>   Deep Neural Networks (DNN) · PyTorch · Convolutional Neural Networks (CNN) · Residual Networks (ResNet) · Object-Oriented Programming (OOP) · Deep Learning
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Speech_Recognition/tree/main"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://i.pinimg.com/736x/d8/e4/6e/d8e46e3a67d87e4942ed788e8328e7a8.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Developed and trained a Convolutional ResNet & Bidirectional GRU for Speech Recognition task! The main objective of this project is to recognize speech and provide transcripts associated with speech in real time. The architecture is compact but efficient, leveraging a well-structured <strong>LibriSpeech</strong> dataset provided by the TorchAudio library.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
+							/>
+						</Card>
+					</motion.div> */}
+
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="w-full h-[300px] col-span-12 sm:col-span-7">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">
+									Bachelor Thesis Project</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> mar 2025 - jun 2025</li>
+									<li>
+										<strong>Tech Stack:</strong> Deep Neural Networks (DNN) · PyTorch · Convolutional Neural Networks (CNN) · Encoder-Decoder · Ultra-Light-Weight ·  Short-Time Fourier Transform (STFT) · Object-Oriented Programming (OOP) · Deep Learning
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Bachelor_Thesis_Project"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://i.pinimg.com/736x/d8/e4/6e/d8e46e3a67d87e4942ed788e8328e7a8.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="w-full h-[300px]">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									Deep learning (Speech Enhancement) focused on improving the clarity of human language regardless of the patient's environment!
+									In other words, this project will adjust and adapt in real time the hearing depending on the environment with the emphasis on the quality of the conversation.
+								</h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
+							/>
+						</Card>
+					</motion.div>
+
+
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">Neural Networks Laboratories</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Time Period:</strong> sept 2024 - jan 2025</li>
+									<li>
+										<strong>Tech Stack:</strong> Deep Neural Networks (DNN) · PyTorch · NumPy · Reinforcement Learning · Convolutional Neural Networks (CNN) · Deep Learning · ResNet · Object-Oriented Programming (OOP) · Git · Python (Programming Language) · Pycharm · GitHub
+									</li>
+								</ul>
+								<Button
+									as="a"
+									href="https://github.com/AndromedaOMA/Neural_Networks---Laboratories"
+									target="_blank"
+									variant="shadow"
+									color="default"
+									className="w-fit mt-auto"
+								>
+									View on GitHub
+								</Button>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Flappy Bird AI background"
+									className="w-full h-full object-cover"
+									src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8NqqKaFpPuE5tuLVMiMtQ0IIJ5sTW5lX_RcDRxd7624DJ7a2w"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<h4 className="text-black/80 font-medium text-md">
+									I have had a deep understanding and development of neural models, from tensors and fully connected Neural Networks to the most current and used today Convolutional Neural Networks and Residual Neural Network. I am currently active in understanding the concepts of Deep Learning through the application of Transformers. </h4>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card background"
+								className="z-0 w-full h-full object-cover blur-sm"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8vadhsOuk1F5mucqxzFknGjNWBqB3hm76J2wh0gVTLZrRn3lS"
 							/>
 						</Card>
 					</motion.div>
@@ -878,7 +1013,7 @@ export default function IndexPage() {
 				<div className="inline-block max-w-4xl justify-center gqp-5">
 					<Accordion variant="bordered">
 						<AccordionItem key="1" aria-label="Accordion 1" title="What is my next goal?">
-							Completion of the bachelor's thesis requiring the improvement of real-time speech by using Deep Learning and Reinforcement Learning techniques.
+							Completion of the bachelor's thesis requiring the enhancement of real-time speech by using Deep Learning.
 						</AccordionItem>
 						<AccordionItem key="2" aria-label="Accordion 2" title="What are my current interests?">
 							Interested in Transformer architectures and Reinforcement Learning algorithms.
