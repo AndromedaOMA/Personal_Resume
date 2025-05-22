@@ -839,7 +839,7 @@ export default function IndexPage() {
 								<p className="text-2xl text-black/40 font-bold mb-2">Bronze Medal at the Infomatrix International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
 									<li><strong>Category:</strong> LEGO Mini Sumo</li>
-									<li><strong>Time Period:</strong> 01 may 2018</li>
+									<li><strong>Time Period:</strong> 01 may 2017</li>
 									<li>
 										<strong>Tech Stack:</strong> Embedded System · C/C++ · Robotics
 									</li>
@@ -905,7 +905,7 @@ export default function IndexPage() {
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">The ﬁnalist alliance in the FIRST Tech Challenge International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Time Period:</strong> 20 apr. 2017</li>
+									<li><strong>Time Period:</strong> 20 apr. 2019</li>
 									<li>
 										<strong>Tech Stack:</strong> Embedded System · Android · Robotics
 									</li>
