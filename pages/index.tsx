@@ -962,7 +962,7 @@ export default function IndexPage() {
 									</li>
 								</ul>
 								<div className="flex flex-col gap-4 w-fit">
-									<Dropdown backdrop="blur">
+									{/* <Dropdown backdrop="blur">
 										<DropdownTrigger>
 											<Button variant="bordered">View on Newspapers</Button>
 										</DropdownTrigger>
@@ -974,7 +974,7 @@ export default function IndexPage() {
 												Monitorul Newspapers
 											</DropdownItem>
 										</DropdownMenu>
-									</Dropdown>
+									</Dropdown> */}
 
 									<Button
 										as="a"
