@@ -88,6 +88,14 @@ export const InfoMatrix2Content = () => (
 	</div>
 );
 
+export const InfoMatrix2_2Content = () => (
+	<div className="text-black/80 font-medium text-md">
+		<p>
+			The same competition as above, but the category is different. Different strictly in terms of combat robots. These are designed this time from mechanical LEGO pieces and made up of sensors and motors that offer exactly the same functionalities as an Arduino robot! Two infrared sensors for detecting the enemy, two color sensors for detecting the combat surface, two motors attached to the wheels, as well as an attack motor, but not lastly the programming brick of the component parts.
+		</p>
+	</div>
+);
+
 // InfoMatrix3Content
 export const InfoMatrix3Content = () => (
 	<div className="text-black/80 font-medium text-md">
@@ -316,7 +324,7 @@ export default function IndexPage() {
 					</motion.div>
 
 
-					
+
 					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
@@ -383,7 +391,7 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 
-{/* 
+					{/* 
 					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
@@ -692,7 +700,7 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">First place at the International <a href="https://robochallenge.ro/">RoboChallenge</a> Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
@@ -702,27 +710,40 @@ export default function IndexPage() {
 										<strong>Tech Stack:</strong> Embedded System · Arduino · C/C++ · Robotics
 									</li>
 								</ul>
-								<Dropdown backdrop="blur">
-									<DropdownTrigger>
-										<Button variant="bordered">View on Newspapers</Button>
-									</DropdownTrigger>
-									<DropdownMenu aria-label="Static Actions" variant="faded">
-										<DropdownItem
-											key="Monitorul"
-											href="https://monitorulneamt.ro/cu-un-robot-de-lupta-locul-i-la-internationala-robochallenge/"
-										>
-											Monitorul Newspapers
-										</DropdownItem>
-										<DropdownItem key="Adevărul" href="https://adevarul.ro/stiri-locale/piatra-neamt/robotii-de-lupta-pasiunea-unui-licean-de-a-x-a-1998360.html"
-										>
-											Adevărul Newspapers
-										</DropdownItem>
-										<DropdownItem key="NewsAllert" href="https://www.newsallert.ro/nemteanul-marius-alexandru-olaru-locul-1-la-competitia-internationala-de-robotica-robochallenge/"
-										>
-											NewsAllert Newspapers
-										</DropdownItem>
-									</DropdownMenu>
-								</Dropdown>
+								<div className="flex flex-col gap-4 w-fit">
+									<Dropdown backdrop="blur">
+										<DropdownTrigger>
+											<Button variant="bordered">View on Newspapers</Button>
+										</DropdownTrigger>
+										<DropdownMenu aria-label="Static Actions" variant="faded">
+											<DropdownItem
+												key="Monitorul"
+												href="https://monitorulneamt.ro/cu-un-robot-de-lupta-locul-i-la-internationala-robochallenge/"
+											>
+												Monitorul Newspapers
+											</DropdownItem>
+											<DropdownItem key="Adevărul" href="https://adevarul.ro/stiri-locale/piatra-neamt/robotii-de-lupta-pasiunea-unui-licean-de-a-x-a-1998360.html"
+											>
+												Adevărul Newspapers
+											</DropdownItem>
+											<DropdownItem key="NewsAllert" href="https://www.newsallert.ro/nemteanul-marius-alexandru-olaru-locul-1-la-competitia-internationala-de-robotica-robochallenge/"
+											>
+												NewsAllert Newspapers
+											</DropdownItem>
+										</DropdownMenu>
+									</Dropdown>
+
+									<Button
+										as="a"
+										href="Certificates\First place at the International RoboChallenge Competition 2019.jpg"
+										target="_blank"
+										variant="shadow"
+										color="default"
+										className="w-fit"
+									>
+										View Certificate of Achievement
+									</Button>
+								</div>
 							</CardHeader>
 							<div className="absolute inset-0 z-0">
 								<Image
@@ -743,10 +764,10 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+								<ScrollShadow hideScrollBar className="w-[300px] h-[270px]">
 									<RoboChallengeContent />
 								</ScrollShadow>
 							</CardHeader>
@@ -767,7 +788,7 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">Silver Medal at the Infomatrix International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
@@ -777,19 +798,32 @@ export default function IndexPage() {
 										<strong>Tech Stack:</strong> Embedded System · Arduino · C/C++ · Robotics
 									</li>
 								</ul>
-								<Dropdown backdrop="blur">
-									<DropdownTrigger>
-										<Button variant="bordered">View on Newspapers</Button>
-									</DropdownTrigger>
-									<DropdownMenu aria-label="Static Actions" variant="faded">
-										<DropdownItem
-											key="Mentorul"
-											href="https://monitorulneamt.ro/medalie-de-argint-la-o-competitie-internationala-pentru-un-elev-de-la-colegiul-de-informatica/"
-										>
-											Mentorul Newspapers
-										</DropdownItem>
-									</DropdownMenu>
-								</Dropdown>
+								<div className="flex flex-col gap-4 w-fit">
+									<Dropdown backdrop="blur">
+										<DropdownTrigger>
+											<Button variant="bordered">View on Newspapers</Button>
+										</DropdownTrigger>
+										<DropdownMenu aria-label="Static Actions" variant="faded">
+											<DropdownItem
+												key="Mentorul"
+												href="https://monitorulneamt.ro/medalie-de-argint-la-o-competitie-internationala-pentru-un-elev-de-la-colegiul-de-informatica/"
+											>
+												Mentorul Newspapers
+											</DropdownItem>
+										</DropdownMenu>
+									</Dropdown>
+
+									<Button
+										as="a"
+										href="Certificates\Silver Medal at the Infomatrix International Competition 2019.jpg"
+										target="_blank"
+										variant="shadow"
+										color="default"
+										className="w-fit"
+									>
+										View Certificate of Achievement
+									</Button>
+								</div>
 							</CardHeader>
 							<div className="absolute inset-0 z-0">
 								<Image
@@ -810,10 +844,10 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg ">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg ">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+								<ScrollShadow hideScrollBar className="w-[300px] h-[270px]">
 									<InfoMatrix2Content />
 								</ScrollShadow>
 							</CardHeader>
@@ -826,6 +860,7 @@ export default function IndexPage() {
 						</Card>
 					</motion.div>
 
+
 					<motion.div
 						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
 						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
@@ -834,29 +869,124 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold mb-2">Silver Medal at the Infomatrix International Competition</p>
+								<ul className="text-sm space-y-1 mb-4">
+									<li><strong>Category:</strong> Robotics LEGO Sumo</li>
+									<li><strong>Time Period:</strong> 14 may 2018</li>
+									<li>
+										<strong>Tech Stack:</strong> Embedded System · Arduino · C/C++ · Robotics
+									</li>
+								</ul>
+								<div className="flex flex-col gap-4 w-fit">
+									<Dropdown backdrop="blur">
+										<DropdownTrigger>
+											<Button variant="bordered">View on Newspapers</Button>
+										</DropdownTrigger>
+										<DropdownMenu aria-label="Static Actions" variant="faded">
+											<DropdownItem
+												key="Mentorul"
+												href="https://monitorulneamt.ro/elev-pietrean-medalie-de-argint-la-competitia-infomatrix-world-final-2018/"
+											>
+												Mentorul Newspapers
+											</DropdownItem>
+										</DropdownMenu>
+									</Dropdown>
+
+									<Button
+										as="a"
+										href="Certificates\Silver Medal at the Infomatrix International Competition 2018.jpg"
+										target="_blank"
+										variant="shadow"
+										color="default"
+										className="w-fit"
+									>
+										View Certificate of Achievement
+									</Button>
+								</div>
+							</CardHeader>
+							<div className="absolute inset-0 z-0">
+								<Image
+									removeWrapper
+									alt="Advanced Analytics background"
+									className="w-full h-full object-cover blur-sm"
+									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+								/>
+								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+							</div>
+						</Card>
+					</motion.div>
+					<motion.div
+						initial={{ x: isSmall ? 0 : 300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-5"
+					>
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg ">
+							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
+								<p className="text-2xl text-black/40 font-bold">Description</p>
+								<ScrollShadow hideScrollBar className="w-[300px] h-[270px]">
+									<InfoMatrix2_2Content />
+								</ScrollShadow>
+							</CardHeader>
+							<Image
+								removeWrapper
+								alt="Card example background"
+								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
+								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+							/>
+						</Card>
+					</motion.div>
+
+
+
+					<motion.div
+						initial={{ x: isSmall ? 0 : -300, opacity: isSmall ? 1 : 0 }}
+						animate={isSmall ? { x: 0, opacity: 1 } : undefined}
+						whileInView={isSmall ? undefined : { x: 0, opacity: 1 }}
+						transition={{ duration: 0.8, ease: "easeOut" }}
+						viewport={{ amount: 0.2, once: true }}
+						className="col-span-12 sm:col-span-7"
+					>
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">Bronze Medal at the Infomatrix International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
-									<li><strong>Category:</strong> LEGO Mini Sumo</li>
+									<li><strong>Category:</strong> Robotics LEGO Sumo</li>
 									<li><strong>Time Period:</strong> 01 may 2017</li>
 									<li>
 										<strong>Tech Stack:</strong> Embedded System · C/C++ · Robotics
 									</li>
 								</ul>
-								<Dropdown backdrop="blur">
-									<DropdownTrigger>
-										<Button variant="bordered">View on Newspapers</Button>
-									</DropdownTrigger>
-									<DropdownMenu aria-label="Static Actions" variant="faded">
-										<DropdownItem
-											key="Monitorul"
-											href="https://monitorulneamt.ro/elev-pietrean-medalie-de-argint-la-competitia-infomatrix-world-final-2018/"
-										>
-											Monitorul Newspapers
-										</DropdownItem>
-									</DropdownMenu>
-								</Dropdown>
+								<div className="flex flex-col gap-4 w-fit">
+									<Dropdown backdrop="blur">
+										<DropdownTrigger>
+											<Button variant="bordered">View on Newspapers</Button>
+										</DropdownTrigger>
+										<DropdownMenu aria-label="Static Actions" variant="faded">
+											<DropdownItem
+												key="Monitorul"
+												href="https://monitorulneamt.ro/elev-pietrean-medalie-de-argint-la-competitia-infomatrix-world-final-2018/"
+											>
+												Monitorul Newspapers
+											</DropdownItem>
+										</DropdownMenu>
+									</Dropdown>
+
+									<Button
+										as="a"
+										href="Certificates\Bronze Medal at the Infomatrix International Competition 2017.jpg"
+										target="_blank"
+										variant="shadow"
+										color="default"
+										className="w-fit"
+									>
+										View Certificate of Achievement
+									</Button>
+								</div>
 							</CardHeader>
 							<div className="absolute inset-0 z-0">
 								<Image
@@ -877,10 +1007,10 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+								<ScrollShadow hideScrollBar className="w-[300px] h-[270px]">
 									<InfoMatrix3Content />
 								</ScrollShadow>
 							</CardHeader>
@@ -901,7 +1031,7 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-7"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold mb-2">The ﬁnalist alliance in the FIRST Tech Challenge International Competition</p>
 								<ul className="text-sm space-y-1 mb-4">
@@ -910,19 +1040,33 @@ export default function IndexPage() {
 										<strong>Tech Stack:</strong> Embedded System · Android · Robotics
 									</li>
 								</ul>
-								<Dropdown backdrop="blur">
-									<DropdownTrigger>
-										<Button variant="bordered">View on Newspapers</Button>
-									</DropdownTrigger>
-									<DropdownMenu aria-label="Static Actions" variant="faded">
-										<DropdownItem
-											key="ZiarPiatraNeamț"
-											href="https://www.ziarpiatraneamt.ro/echipa-aquila-de-la-colegiul-national-petru-rares-va-participa-la-competitia-nationala-de-robotica-first-tech-challenge"
-										>
-											ZiarPiatraNeamț Newspapers
-										</DropdownItem>
-									</DropdownMenu>
-								</Dropdown>
+								<div className="flex flex-col gap-4 w-fit">
+									<Dropdown backdrop="blur">
+										<DropdownTrigger>
+											<Button variant="bordered">View on Newspapers</Button>
+										</DropdownTrigger>
+										<DropdownMenu aria-label="Static Actions" variant="faded">
+											<DropdownItem
+												key="ZiarPiatraNeamț"
+												href="https://www.ziarpiatraneamt.ro/echipa-aquila-de-la-colegiul-national-petru-rares-va-participa-la-competitia-nationala-de-robotica-first-tech-challenge"
+											>
+												ZiarPiatraNeamț Newspapers
+											</DropdownItem>
+										</DropdownMenu>
+									</Dropdown>
+
+									<Button
+										as="a"
+										href="/Certificates/The ﬁnalist alliance in the FIRST Tech Challenge International Competition 2018-2019.jpg"
+										target="_blank"
+										variant="shadow"
+										color="default"
+										className="w-fit"
+									>
+										View Certificate of Achievement
+									</Button>
+								</div>
+
 							</CardHeader>
 							<div className="absolute inset-0 z-0">
 								<Image
@@ -943,10 +1087,10 @@ export default function IndexPage() {
 						viewport={{ amount: 0.2, once: true }}
 						className="col-span-12 sm:col-span-5"
 					>
-						<Card className="relative w-full h-[300px] rounded-2xl overflow-hidden shadow-lg">
+						<Card className="relative w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
 							<CardHeader className="absolute z-10 top-1 flex-col !items-start">
 								<p className="text-2xl text-black/40 font-bold">Description</p>
-								<ScrollShadow hideScrollBar className="w-[300px] h-[210px]">
+								<ScrollShadow hideScrollBar className="w-[300px] h-[270px]">
 									<FTCContent />
 								</ScrollShadow>
 							</CardHeader>
