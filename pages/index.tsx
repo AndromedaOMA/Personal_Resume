@@ -775,7 +775,7 @@ export default function IndexPage() {
 								removeWrapper
 								alt="Card background"
 								className="z-0 w-full h-full object-cover blur-sm"
-								src="https://eleven-clinic.com/wp-content/uploads/2022/11/misiune.jpg"
+								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
 							/>
 						</Card>
 					</motion.div>
@@ -911,7 +911,7 @@ export default function IndexPage() {
 									removeWrapper
 									alt="Advanced Analytics background"
 									className="w-full h-full object-cover blur-sm"
-									src="https://www.themezaa.com/html/leadgen/demo/spa-salon/images/event-gallery-09.jpg"
+									src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB1dtOii_TJA_mbA7LgZzqkNmQQTatf0cOFLmHw_bXCR1fp_Cx"
 								/>
 								<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
 							</div>
@@ -936,7 +936,7 @@ export default function IndexPage() {
 								removeWrapper
 								alt="Card example background"
 								className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-sm"
-								src="https://cdn.pixabay.com/photo/2024/05/20/07/48/ai-generated-8774027_1280.jpg"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSsX_YoMuF00RVnWoTPVpvk164tG-1ppuYV3K60ImRirmjzjjK"
 							/>
 						</Card>
 					</motion.div>
@@ -1018,7 +1018,7 @@ export default function IndexPage() {
 								removeWrapper
 								alt="Card background"
 								className="z-0 w-full h-full object-cover blur-sm"
-								src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGwmiJlH_y0R_HUMmsDS9qK61nc6OJVmOz0A68Ux_oqcBBBrx2"
+								src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBSVMBfr16q-MOrK32pEmCa-a0URltulPybaSDMbsW4iR7idwR"
 							/>
 						</Card>
 					</motion.div>
