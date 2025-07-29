@@ -231,9 +231,33 @@ export default function IndexPage() {
 						<div className="inline-block max-w-4xl text-center justify-center gap-5">
 							<h1 className={title()}>Education&nbsp;</h1>
 						</div>
+
+						<br/>
+						<br/>
+
 						<div>
 							<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
-							<p className="text-lg mb-1">Bachelor’s Degree in Computer Science</p>
+							<p className="text-lg mb-1"><strong>Research Master</strong> - Computer Science</p>
+							<p className="text-sm mb-6">October 2025 – July 2027</p>
+
+							<h4 className="text-lg font-medium mb-2">Relevant Coursework</h4>
+							<ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-base">
+								<li>Advanced Chapters on Neural Networks</li>
+								<li>(Advanced Chapters on) Artificial Vision</li>
+								<li>Deep Learning with Applications in NLP</li>
+								<li>Programmatic Aspects for Cloud Service Engineering - AWS</li>
+								<li>Data Mining</li>
+								<li>Big Data</li>
+							</ul>
+						</div>
+
+						{/* <div className="w-full my-8 flex justify-center">
+						<div className="w-64 h-[1.5px] bg-gray-500 rounded-full"></div>
+						</div> */}
+
+						<div>
+							<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
+							<p className="text-lg mb-1"><strong>Bachelor’s Degree</strong> in Computer Science</p>
 							<p className="text-sm mb-6">October 2022 – July 2025</p>
 
 							<h4 className="text-lg font-medium mb-2">Relevant Coursework</h4>
@@ -255,7 +279,6 @@ export default function IndexPage() {
 
 
 				<div id="projects"> <p><br /><br /></p> </div>
-
 				<div className="inline-block max-w-4xl text-center justify-center gap-5">
 					<h1 className={title()}>My personal projects&nbsp;</h1>
 				</div>
