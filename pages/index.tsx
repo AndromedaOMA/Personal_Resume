@@ -254,6 +254,7 @@ export default function IndexPage() {
 						{/* <div className="w-full my-8 flex justify-center">
 						<div className="w-64 h-[1.5px] bg-gray-500 rounded-full"></div>
 						</div> */}
+						<br/>
 
 						<div>
 							<h3 className="text-2xl font-semibold">"Alexandru Ioan Cuza" University of Iași, România</h3>
