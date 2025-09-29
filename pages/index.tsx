@@ -1181,10 +1181,10 @@ export default function IndexPage() {
 				<div className="inline-block max-w-4xl justify-center gqp-5">
 					<Accordion variant="bordered">
 						<AccordionItem key="1" aria-label="Accordion 1" title="What is my next goal?">
-							Completion of the bachelor's thesis requiring the enhancement of real-time speech by using Deep Learning.
+							Implementing and understanding Hybrid Quantum Neural Networks.
 						</AccordionItem>
 						<AccordionItem key="2" aria-label="Accordion 2" title="What are my current interests?">
-							Interested in Transformer architectures and Reinforcement Learning algorithms.
+							Interested in Big Data, Quantum Computing, Deep Learning.
 						</AccordionItem>
 					</Accordion>
 				</div>
